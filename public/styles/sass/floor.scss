@@ -1,0 +1,261 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//楼梯效果的css
+.floor-result {
+    background: cornflowerblue;
+}
+
+//第一层楼
+.floor-result>div {
+    // display: flex;
+    margin-top: 250px;
+    margin-left: 250px;
+    float: left;
+    position: relative;
+}
+
+//楼层标识
+.floor-1 {
+    width: 1200px;
+    border-bottom: 1px solid #ec5151;
+    position: relative;
+}
+
+.floor-2 {
+    margin-top: 4px;
+}
+
+// 楼层一
+.floor-1>h2 {
+    width: 220px;
+    // background: red;
+    span {
+        font-size: 18px;
+        color: #333;
+        font-family: "microsoft yahei";
+        font-weight: normal;
+        display: inline-block;
+        padding-left: 40px;
+    }
+}
+
+// 楼层二
+.floor-2>h2 {
+    width: 238px;
+    // background: red;
+    span {
+        font-size: 18px;
+        color: #333;
+        font-family: "microsoft yahei";
+        font-weight: normal;
+        display: inline-block;
+        padding-left: 40px;
+    }
+}
+
+//楼层内容
+// 第一层右边的菜单
+.floor-1>ul {
+    width: 306px;
+    // background: chocolate;
+    position: absolute;
+    top: -7px;
+    left: 888px;
+    li {
+        float: left;
+        list-style: none;
+        float: left;
+        color: #333;
+        font-size: 14px;
+        margin-left: 20px;
+        position: relative;
+        cursor: pointer;
+        z-index: 10;
+        padding-bottom: 10px;
+        i {
+            // display: none;
+            position: absolute;
+            width: 59px;
+            height: 4px;
+            background: #ec5151;
+            border-radius: 2px;
+            left: -2px;
+            bottom: -2px;
+            z-index: 9;
+        }
+    }
+}
+
+.floor-1>ul {
+    width: 306px;
+    // background: chocolate;
+    position: absolute;
+    top: -7px !important;
+    left: 888px;
+}
+
+// 第二层右边的菜单
+.floor-2>ul {
+    width: 306px;
+    // background: chocolate;
+    position: absolute;
+    top: 263px;
+    left: 888px;
+    li {
+        padding-bottom: 10px;
+    }
+}
+
+// 第三层右边的菜单
+.floor-3>ul {
+    width: 324px;
+    position: absolute;
+    top: 280px;
+    left: 877px;
+}
+
+// 第四层右边的菜单
+.floor-4>ul {
+    width: 322px;
+    position: absolute;
+    top: 310px;
+    left: 877px;
+}
+
+// 第五层
+.floor-5>ul {
+    width: 322px;
+    position: absolute;
+    top: 310px;
+    left: 900px;
+}
+
+//切换的内容
+.floor-items {
+    // width: 200px;
+    // height: 200px;
+    display: flex;
+    // 左边的内容
+    .fi-left {
+        width: 460px;
+        // margin-left: 200px;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        // background: chocolate;
+        // 导航栏
+        .fi-left>div:nth-child(1) {
+            width: 341px;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                width: 343px;
+                height: 489px;
+            }
+        }
+        .fi-menu {
+            width: 128px;
+            height: 490px;
+            background: #ffe5f0;
+            float: left;
+            position: absolute;
+            top: 70px;
+            left: 0px;
+            ul>li {
+                list-style: none;
+                width: 128px;
+                height: 45px;
+                line-height: 45px;
+                overflow: hidden;
+                &:hover {
+                    background: #fec7de;
+                }
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+                }
+                .oneClass-name {
+                    font-family: "microsoft yahei";
+                    display: inline-block;
+                    width: 120px;
+                    height: 45px;
+                    overflow: hidden;
+                    color: #333;
+                    font-size: 14px;
+                    padding: 10px 20px;
+                    position: relative;
+                    padding-right: 10px;
+                    i {
+                        font: 700 13px/13px simsun;
+                        color: #333;
+                        position: absolute;
+                        top: 16px;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+        // 商品的牌子--内部样式
+    }
+    // 右边内容
+    .fi-right {
+        width: 740px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .fi-right>div {
+        width: 740px;
+        height: 490px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        position: absolute;
+        // margin: 10px auto 0;
+        display: none;
+        ul>li {
+            list-style: none;
+        }
+    }
+    .show {
+        display: block;
+    }
+}
+
+//菜单底部
+.fi-bottom {
+    // width: 200px;
+    // height: 132px;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+    ul {
+        width: 1200px;
+        // height: ;
+        float: left;
+        border-left: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+        border-right: 1px solid #fff;
+        border-top: 1px solid #dcdcdc;
+        margin-top: -1px;
+    }
+    ul>li {
+        list-style: none;
+        float: left;
+        ;
+        img {
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .new-left {
+            float: left;
+            width: 239px;
+            height: 132px;
+            text-align: center;
+        }
+    }
+}

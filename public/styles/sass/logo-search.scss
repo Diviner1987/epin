@@ -1,0 +1,77 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//logo,搜索框
+#logo-search {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 22px 0 0 0;
+}
+
+//左
+#logo-search>div:nth-of-type(1) {
+    justify-content: space-around;
+    align-items: center;
+    img {
+        width: 220px;
+        height: 58px;
+    }
+}
+
+//中
+//搜索框整体移动
+.ser {
+    margin-left: 110px;
+}
+
+//搜索框内部
+.sou {
+    margin-top: 17px;
+    margin-left: 20px;
+    // border-radius: none;
+    width: 458px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid #ec5151;
+}
+
+//关键字
+.key {
+    margin-left: 125px;
+    float: left;
+    ul>li>a:hover {
+        color: #ec5151;
+    }
+}
+
+//关键字的列表
+.key>ul>li {
+    float: left;
+    list-style: none;
+}
+
+//列表的第一个
+.key>ul>li>a:nth-of-type(1) {
+    margin-right: 10px;
+}
+
+//其他a的样式
+.key>ul>li>a {
+    font-size: 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgba($color: #000000, $alpha: 0.8);
+}
+
+//右
+#logo-search>div:nth-of-type(3) {
+    justify-content: space-around;
+    align-items: center;
+    img {
+        background: url(../../img/ecsc_icon.png) -404px -2px no-repeat;
+    }
+}

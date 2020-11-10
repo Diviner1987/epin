@@ -1,0 +1,11 @@
+@charset "utf-8";
+//用来导入其他的scss的
+@import "./nav"; //导航栏
+@import "./logo-search"; //logo和搜索框 
+@import "./shopping-nav"; //商品的导航栏
+@import "./ver-tabs"; //轮播图tab切换
+@import "./shopping-tabs"; //商品的tab切换
+@import "./floor"; //楼层跳转
+@import "./footer"; //底部
+@import "./lunbo2"; //商品佛瑞轮播图
+// @import

@@ -4,12 +4,1526 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>首页</title>
+    <link rel="stylesheet" href="./styles/sass/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/css/lunbo-sp.css">
+    <script src="./js/library/jquery-1.10.1.min.js"></script>
+    <script src="./js/library/idangerous.swiper.min.js"></script>
+    <script src="./js/lunbo-sp.js"></script>
+    <script src='./js/index.js'></script>
+
 </head>
 
 <body>
-    <!-- 静态文件写在public -->
-    <h1>dfhgeyrfuye</h1>
+    <!-- 定版心设置网页的宽度 -->
+    <div id="nav-container" style="background: #efefef;">
+        <!-- 导航栏 -->
+        <div class="site-nav">
+            <!-- 送货至 -->
+            <div>
+                <!-- 送货 -->
+                <div class="ash sh">
+                    <ul>
+                        <li>送货至:</li>
+                        <li>
+                            郑州
+                            <span>^</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 登录注册 -->
+                <div class="ash  dz">
+                    <a href="javascript:;">请登录</a>
+                    <a href="javascript:;">注册</a>
+                </div>
+            </div>
+
+            <!-- 我的订单 -->
+            <div>
+                <!-- 订单，客服 -->
+                <ul>
+                    <li>
+                        <a href="javascript:;">我的订单</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;" style="color:#c72a31">
+                            <b>会员卡充值</b>
+                        </a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我的收藏</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">在线客服</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">网站导航</a>
+                        <span class="slide">^</span>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">手机宜品</a>
+                        <span class="slide">^</span>
+                    </li>
+                </ul>
+
+                <!-- 购物车 -->
+
+                <ul>
+                    <li>
+                        <img src="./img/shopcart_2015.png" alt="">
+                    </li>
+                    <li>
+                        <a href="javascrpit:;">购物车</a>
+                        <span>&gt;</span>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- logo.搜索框 -->
+    <div id="logo-search">
+        <!-- logo -->
+        <div>
+            <img src="./img/logo.gif" alt="">
+        </div>
+        <!-- 搜索框 -->
+        <div>
+            <div class="row">
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-12 ser">
+                    <div class="input-group sou">
+                        <input type="text" class="form-control" placeholder="商品">
+
+                        <div class="input-group-btn an">
+                            <button type="button" class="btn btn-default " style="outline-style: none;background-color: #ec5151;color: #fff;">搜索 
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!-- /.col-lg-6 -->
+        </div>
+        <div class=" key">
+                    <ul>
+                        <li>
+                            <a href="">美的</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">博洋</a>
+                              <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">清扬</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">隆力奇</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">舒克</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">贝亲</a>
+                            <span>|</span>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+            <!-- /.row -->
+        <!-- 电话联系 -->
+        <div>
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <!-- 浮动的导航栏 -->
+    <div id="float-nav" style="display: none; float: left;">
+        <!-- logo -->
+        <div>
+            <img src="./img/logo.gif" alt="">
+        </div>
+        <!-- 搜索框 -->
+        <div>
+            <div class="row">
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-12 ser">
+                    <div class="input-group sou">
+                        <input type="text" class="form-control" placeholder="商品">
+
+                        <div class="input-group-btn an">
+                            <button type="button" class="btn btn-default " style="outline-style: none;background-color: #ec5151;color: #fff;">搜索 
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /input-group -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 商品的导航栏 -->
+    <div id="shopping">
+        <!--商品导航栏  -->
+        <div>
+            <div >
+                <!-- 全部商品上面的导航栏 -->
+                <div class="ver-nav">
+                    <a href="javascript:;">全部商品分类</a>
+                </div>
+                <!-- 垂直的导航栏 -->
+                <div class="ver-block">
+                    <!-- 显示的垂直导航栏 -->
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="javascript:;" title="美妆、护理、个人清洁">美妆、护理、个人清洁</a>
+                                <b>></b>
+                            </li>
+
+                            <li>
+                                <a href="javascript:;" title="美食、粮油、特产、饮品">美食、粮油、特产、饮品</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="电器、数码、医疗器械">电器、数码、医疗器械</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="白酒、红酒、高端藏酒">白酒、红酒、高端藏酒</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="家居、家具、厨具、家纺">家居、家具、厨具、家纺</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="家庭、衣物清洁、宠物">家庭、衣物清洁、宠物</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="办公电脑、文具、耗材">办公电脑、文具、耗材</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="箱包、体育健身、户外">箱包、体育健身、户外</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="图书、音像、电子书">图书、音像、电子书</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="珠宝首饰、手表、眼镜">珠宝首饰、手表、眼镜</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="汽车装饰、保养、车用配件">汽车装饰、保养、车用配件</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="母婴、童装玩具、乐器">母婴、童装玩具、乐器</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="男/女装、男/女鞋、帽子">男/女装、男/女鞋、帽子</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;"title="宜品卡、生活服务">宜品卡、生活服务</a>
+                                <b>></b>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <!-- 隐藏的垂直导航栏 --tab切换-->
+                </div>
+            </div>
+            <!-- 水平导航栏 -->
+            <div class="al-nav" style="width: 1200px;">
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="active">首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">夏末初秋</a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:;">宜品自营</a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:;">宜品卡</a>
+                    </li>
+                </ul>
+                <!-- 到时候写jshover的时候给当前元素加上下划线，让下划线向左移动多少 -->
+                 <div style="width: 72px; left: 20px;" class="sh-line">
+                <span style="left:15px;" ></span>
+                </div>
+                <!-- tab切换 -->
+                <div style="display: none;">
+                    <div class="tabs">
+                </div>
+            </div>
+            <!-- 轮播图 -->
+            <div class="al-lunbo" style="width: 1200px;">
+                    <!-- 轮播 -->
+                    <div class="slider" style="width: 1200px;">
+                        <div>
+                            <a href="">
+                                <img src="./img/1602464269531319735.jpg" alt="">
+                            </a>
+                            <a href="">
+                                 <img src="./img/1602443447128629311.jpg" alt="" style="display: none;">
+                            </a>
+                           <a href="">
+                               <img src="./img/1599442292865038668.jpg" alt="" style="display: none;">
+                           </a>
+                        </div>
+                        <div style="position: absolute;left: 650px;top:360px;">
+                            <ul style="width: 70px;height: 60px;float: left;margin-left: 20px;">
+                                <li style="width: 20px;height: 20px;border-radius: 50%;border: 2px solid #ec5151;list-style: none;"></li>
+                                <li style="width: 20px;height: 20px;border-radius: 50%;border: 2px solid #ec5151;list-style: none;"></li>
+                                <li style="width: 20px;height: 20px;border-radius: 50%;border: 2px solid #ec5151;list-style: none;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                   <!-- 小图 -->
+                    <div class="small-lunbo" style="width: 1200px;">
+                    <ul class="small-ul">
+                        <li>
+                            <a href="">
+                           <img src="./img/1595286322902684191.jpg" alt="">
+                        </a>
+                        </li>
+                        <li>
+                             <a href="" style="margin-left: -60px;">
+                           <img src="./img/1595286429426491083.jpg" alt="">
+                        </a>
+                        </li>
+                        <li>
+                        <a href="" style="margin-left: -60px;">
+                         <img src="./img/1595286516369327224.jpg" alt="">
+                        </a> 
+                        </li>
+                    </ul>
+                    </div>
+                <!-- 公告 -->
+                <div class="infor" style="margin-left: 728px;background: #efefef;width: 250px;height: 188px;">
+                    <h4 style="margin-top: -436px;margin-left: 90px;font-weight: 10;padding-top: 20px;color: #333;">商城公告</h4>
+               
+                <div class="tabs-panel" >
+                <ul style="margin-left: -10px;">
+                    <li style="margin-top: 20px;">
+                        <a href="" style="font-size: 12px; line-height: 20px;color: #666;" title="国庆节中秋节双节放假通知" class="infor-a">国庆节中秋节双节放假通知
+                        &nbsp;[2020-09-29]
+                        </a>
+                    </li>
+                    <li style="margin-top: -5px;">
+                        <a href="" style="font-size: 12px;line-height: 20px;color: #666;" title="宜品注册、购物、转入积分等基本操作流程" class="infor-a">宜品注册、购物、转入积分等基本操作流程&nbsp;[2018-06-06]
+                        </a>
+                       
+                    </li>
+                    <li style="margin-top: -15px;">
+                        <a href="" style="font-size: 12px;color: #666;" title="宜品商城自提地址通知" class="infor-a">宜品商城自提地址通知&nbsp;[2017-03-28]
+                        </a>
+                       
+                    </li>
+                    <li style="margin-top: -22px;">
+                        <a href="" style="font-size: 12px;color: #666;" title="常见问题汇总" class="infor-a">常见问题汇总&nbsp;[2017-02-04]
+                        </a>
+                    </li>
+                </ul>
+                </div>
+                </div>
+            </div>
+            <div  class="shopping-tabs" >
+             <!-- 切换 -->
+            <div class="sp-tabs">
+                <!-- 热门推荐 -->
+                <div>
+                    <ul data-type="tabs-btn">
+                    <li class="active" style="margin-left: 0;">
+                        热门推荐
+                        <i></i>
+                    </li>
+                    <li>
+                        疯狂抢购
+                        <i></i>
+                    </li>
+                    <li>
+                        商城推荐
+                        <i></i>
+                    </li>
+                    <li>
+                        新品抢先
+                        <i></i>
+                    </li>
+                    </ul>
+                </div>
+                <!-- 切换内容---轮播图 -->
+            </div style=" overflow:hidden; position:relative; width:929.947915px;">
+                <!-- <ul style="width: 1859.9px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;" id="tabs-contanier"> -->
+                    <div class="seckill-box">
+
+                        <!-- <div class="seckill-title">
+                            <div class="title">
+                                <i class="icon"></i>
+                                <h3>秒杀专区</h3>
+                                <a href="#">Spike zone &gt;</a>
+                            </div>
+                            <div class="countdown">
+                                <span class="tip">本场秒杀</span>
+                                <span class="timer" id="seckillTimeDown">
+                                    <span class="m" data-cd-type="allHours"></span><em>:</em><span class="h"
+                                        data-cd-type="minutes"></span><em>:</em><span class="s" data-cd-type="seconds"></span></span>
+                                <span class="tip">后结束</span>
+                            </div>
+                
+                        </div> -->
+                        <div class="seckill-content">
+                            <a class="bx-prev">&lt;</a>
+                            <a class="bx-next">&gt;</a>
+                            <div class="wrapp">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://cbu01.alicdn.com/img/ibank/2020/758/778/21864877857_1336326719.jpg_300x300.jpg" />
+                                        <p>【四色葡萄干250g】树上黄黑加仑绿宝石玫瑰红葡萄干</p>
+                                        <span>¥76.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="http://images.epin.com/images/202009/thumb_img/34653_thumb_G_1599090653411.jpg" />
+                                        <p>2020中秋月饼礼盒 福利月饼 送礼礼盒</p>
+                                        <span>¥319.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://cbu01.alicdn.com/img/ibank/2020/758/778/21864877857_1336326719.jpg_300x300.jpg" />
+                                        <p>【四色葡萄干250g】树上黄黑加仑绿宝石玫瑰红葡萄干</p>
+                                        <span>¥76.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="http://images.epin.com/images/202009/thumb_img/34653_thumb_G_1599090653411.jpg" />
+                                        <p>2020中秋月饼礼盒 福利月饼 送礼礼盒</p>
+                                        <span>¥319.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://cbu01.alicdn.com/img/ibank/2020/758/778/21864877857_1336326719.jpg_300x300.jpg" />
+                                        <p>【四色葡萄干250g】树上黄黑加仑绿宝石玫瑰红葡萄干</p>
+                                        <span>¥76.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="http://images.epin.com/images/202009/thumb_img/34653_thumb_G_1599090653411.jpg" />
+                                        <p>2020中秋月饼礼盒 福利月饼 送礼礼盒</p>
+                                        <span>¥319.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://cbu01.alicdn.com/img/ibank/2020/758/778/21864877857_1336326719.jpg_300x300.jpg" />
+                                        <p>【四色葡萄干250g】树上黄黑加仑绿宝石玫瑰红葡萄干</p>
+                                        <span>¥76.00</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="http://images.epin.com/images/202009/thumb_img/34653_thumb_G_1599090653411.jpg" />
+                                        <p>2020中秋月饼礼盒 福利月饼 送礼礼盒</p>
+                                        <span>¥319.00</span>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- 空div -->
+            <div class="shopping-pol">
+            </div>
+        </div>
+        <!-- 有爱，润育新生，图片 -->
+        <div class="raise-img">
+            <a href="javascript:;">
+                <img src="./img/1566258930744757334.jpg" alt="">
+            </a>
+        </div>
+    </div> 
+    <!-- 楼梯效果 -->
+        </div>
+    <div class="floor-result">
+        <div>
+             <!-- 第一层 -->
+            <div data-title="美妆、护理、个人清洁"  class="floor-1" style="margin-top: 50px;">
+                 <h2 style="font-size:18px;">
+                <!-- 楼层标识 -->
+                    <i></i>
+                <!-- 楼层内容信息 -->
+                    <span >美妆、护理、个人清洁</span>
+                </h2>
+                <ul style="margin-top: -7px;">
+                    <li>
+                        口腔护理
+                        <i></i>
+                    </li>
+                    <li>
+                        面部护肤
+                        <i></i>
+                    </li>
+                    <li>
+                        头部护理
+                        <i></i>
+                    </li>
+                    <li>
+                        身体护理
+                        <i></i>
+                    </li>
+                </ul>
+            </div>
+            <!-- 楼层切换内容 -->
+            <div class="floor-items" >
+                <!-- 左边的内容 -->
+                  <div class="fi-left">
+                        <div >
+                         <img src="./img/1566258743639245669.jpg" alt="">
+                         <!-- 图片上面的列表菜单-->
+                         <div class="fi-menu" style="margin-top: 19px;" >
+                             <!-- 显示的菜单 -->
+                            <ul>
+                                 <li>
+                                     <a href="javascript:;" class="oneClass-name">口腔护理
+                                         <i>&gt;</i>
+                                     </a>
+                                    </li>
+                                 <li>
+                                     <a href="javascript:;" class="oneClass-name">面部护肤
+                                        <i>&gt;</i>
+                                     </a>
+                                </li>
+                                 <li>
+                                     <a href="javascript:;" class="oneClass-name">头部护理
+                                        <i>&gt;</i>
+                                     </a>
+                                    </li>
+                                 <li>
+                                     <a href="javascript:;" class="oneClass-name"> 身体护理
+                                        <i>&gt;</i>
+                                     </a>
+                                    </li>
+                                 <li>
+                                     <a href="javascript:;" class="oneClass-name"> 香水彩妆
+                                        <i>&gt;</i>
+                                     </a>
+                                    </li>
+                                 <li>
+                                     <a href="javascript:;" class="oneClass-name">女性护理
+                                        <i>&gt;</i>
+                                     </a>
+                                    </li>
+                                 <li>
+                                     <a href="javascript:;" class="oneClass-name">男士护理
+                                        <i>&gt;</i>
+                                     </a>
+                                     
+                                    </li>
+                            </ul>
+                            <!-- 隐藏的菜单 -->
+                            <div>
+
+                            </div>
+                         </div>
+                        </div>
+                        <div style="width: 118px;
+                        height: 489px; background: #e7e7e7;">
+                         <ul style="margin-top: 10px; margin-left: 9px; list-style: none;">
+                             <li>
+                                 <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1479940967160854283.jpg" alt="" style="width: 100px;height: 44px;"></a>
+
+                             </li>
+                             <p style="color: #ccc;">---------------------</p>
+                             <li>
+                                <a href="javascript:;" ><img src="http://images.epin.com/data/brandlogo/1479940505787398871.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                            </li>
+                            <p style="color: #ccc;">---------------------</p>
+                            <li>
+                                <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024092620887842.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                            </li>
+                            <p style="color: #ccc;">---------------------</p>
+                            <li>
+                                <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480019449639485602.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                            </li>
+                            <p style="color: #ccc;">---------------------</p>
+                            <li>
+                                <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024008658161598.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                            </li>
+                         </ul>
+                        </div>
+                  </div>
+                  <!-- 右边的内容 -->
+                <div class="fi-right">
+                    <div data-type="tabs-div" class="show">
+                         888
+                        <ul>
+                            <li>
+                                <img src="" alt="">
+                                <p></p>
+                                <p></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-type="tabs-div">
+                    内容2
+                    </div>
+                    <div data-type="tabs-div">
+                    内容3
+                    </div>
+                </div>
+            </div>
+            <!-- 越洗越水润 -->
+            <div class="fi-bottom">
+                    <ul>
+                        <li>
+                            <div class="new-left">
+                                 <a href="">
+                                <img src="http://images.epin.com/data/afficheimg/1537398380866409325.jpg" alt="" style="max-width: 238px;
+                                max-height: 132px;
+                                text-align: center;
+                                float: none;">
+                            </a>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="new-left">
+                                <a href="">
+                                <img src="http://images.epin.com/data/afficheimg/1567126680977515314.jpg" alt="" style="max-width: 238px;
+                                max-height: 132px;
+                                text-align: center;
+                                float: none;">
+                            </a>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="new-left">
+                                <a href="">
+                                <img src="http://images.epin.com/data/afficheimg/1561080699149202573.jpg" alt=""style="max-width: 238px;
+                                max-height: 132px;
+                                text-align: center;
+                                float: none;">
+                            </a>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="new-left">
+                                <a href="">
+                               <img src="http://images.epin.com/data/afficheimg/1561080722706629888.jpg" alt=""style="max-width: 238px;
+                               max-height: 132px;
+                               text-align: center;
+                               float: none;">
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+            <!-- 第二层 -->
+            
+            <div data-title="美食、粮油、特产、饮品"  class="floor-1 floor-2">
+                <div class=" raise-img raise-img2">
+                    <a href="javascript:;">
+                    <img src="http://images.epin.com/data/afficheimg/1586304209750760611.jpg" alt="">
+                    </a>
+                </div>
+                
+                <h2 style="font-size:18px;">
+               <!-- 楼层标识 -->
+                   <i></i>
+               <!-- 楼层内容信息 -->
+                   <span style="margin-top: 156px;">美食、粮油、特产、饮品</span>
+               </h2>
+               <ul style="margin-top: -16px;">
+                   <li>
+                    坚果炒货
+                       <i></i>
+                   </li>
+                   <li>
+                    休闲食品
+                       <i></i>
+                   </li>
+                   <li style="margin-right: 30px;">
+                    茶叶
+                       <i></i>
+                   </li>
+                   <li>
+                    饮料冲调
+                       <i></i>
+                   </li>
+               </ul>
+            </div>
+           <!-- 楼层切换内容 -->
+            <div class="floor-items"style="margin-top: 0px;">
+               <!-- 左边的内容 -->
+                 <div class="fi-left">
+                       <div >
+                        <img src="./img/1566258760195548496.jpg" alt="">
+                        <!-- 图片上面的列表菜单-->
+                        <div class="fi-menu 
+                        " style="margin-top: 818px;background: #e5c475;;">
+                            <!-- 显示的菜单 -->
+                           <ul >
+                                <li >
+                                    <a href="javascript:;" class="oneClass-name">口腔护理
+                                        <i>&gt;</i>
+                                    </a>
+                                   </li>
+                                <li >
+                                    <a href="javascript:;" class="oneClass-name">面部护肤
+                                       <i>&gt;</i>
+                                    </a>
+                               </li>
+                                <li >
+                                    <a href="javascript:;" class="oneClass-name">头部护理
+                                       <i>&gt;</i>
+                                    </a>
+                                   </li>
+                                <li >
+                                    <a href="javascript:;" class="oneClass-name"> 身体护理
+                                       <i>&gt;</i>
+                                    </a>
+                                   </li>
+                                <li >
+                                    <a href="javascript:;" class="oneClass-name"> 香水彩妆
+                                       <i>&gt;</i>
+                                    </a>
+                                   </li>
+                                <li >
+                                    <a href="javascript:;" class="oneClass-name">女性护理
+                                       <i>&gt;</i>
+                                    </a>
+                                   </li>
+                                <li >
+                                    <a href="javascript:;" class="oneClass-name">男士护理
+                                       <i>&gt;</i>
+                                    </a>
+                                    
+                                   </li>
+                           </ul>
+                           <!-- 隐藏的菜单 -->
+                           <div>
+
+                           </div>
+                        </div>
+                       </div>
+                       <div style="width: 118px;
+                       height: 489px; background: #e7e7e7;">
+                        <ul style="margin-top: 10px; margin-left: 9px; list-style: none;">
+                            <li>
+                                <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1479940967160854283.jpg" alt="" style="width: 100px;height: 44px;"></a>
+
+                            </li>
+                            <p style="color: #ccc;">---------------------</p>
+                            <li>
+                               <a href="javascript:;" ><img src="http://images.epin.com/data/brandlogo/1479940505787398871.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                           </li>
+                           <p style="color: #ccc;">---------------------</p>
+                           <li>
+                               <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024092620887842.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                           </li>
+                           <p style="color: #ccc;">---------------------</p>
+                           <li>
+                               <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480019449639485602.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                           </li>
+                           <p style="color: #ccc;">---------------------</p>
+                           <li>
+                               <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024008658161598.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                           </li>
+                        </ul>
+                       </div>
+                 </div>
+                 <!-- 右边的内容 -->
+               <div class="fi-right">
+                   <div data-type="tabs-div" class="show">
+                        888
+                       <ul>
+                           <li>
+                               <img src="" alt="">
+                               <p></p>
+                               <p></p>
+                           </li>
+                       </ul>
+                   </div>
+                   <div data-type="tabs-div">
+                   内容2
+                   </div>
+                   <div data-type="tabs-div">
+                   内容3
+                   </div>
+               </div>
+            </div>
+            <!-- 越洗越水润 -->
+            <div class="fi-bottom">
+                   <ul>
+                       <li>
+                           <div class="new-left">
+                                <a href="">
+                               <img src="http://images.epin.com/data/afficheimg/1537398380866409325.jpg" alt="" style="max-width: 238px;
+                               max-height: 132px;
+                               text-align: center;
+                               float: none;">
+                           </a>
+                           </div>
+                          
+                       </li>
+                       <li>
+                           <div class="new-left">
+                               <a href="">
+                               <img src="http://images.epin.com/data/afficheimg/1567126680977515314.jpg" alt="" style="max-width: 238px;
+                               max-height: 132px;
+                               text-align: center;
+                               float: none;">
+                           </a>
+                           </div>
+                           
+                       </li>
+                       <li>
+                           <div class="new-left">
+                               <a href="">
+                               <img src="http://images.epin.com/data/afficheimg/1561080699149202573.jpg" alt=""style="max-width: 238px;
+                               max-height: 132px;
+                               text-align: center;
+                               float: none;">
+                           </a>
+                           </div>
+                           
+                       </li>
+                       <li>
+                           <div class="new-left">
+                               <a href="">
+                              <img src="http://images.epin.com/data/afficheimg/1561080722706629888.jpg" alt=""style="max-width: 238px;
+                              max-height: 132px;
+                              text-align: center;
+                              float: none;">
+                           </a>
+                           </div>
+                          
+                       </li>
+                   </ul>
+            </div>
+            <!-- 第三层 -->
+            <div data-title="电器、数码、医疗器械"  class="floor-1 floor-2 floor-3">
+                <div class="raise-img raise-img2">
+            <a href="javascript:;">
+                <img src="http://images.epin.com/data/afficheimg/1566259028644702629.jpg" alt="">
+            </a>
+            </div>
+            <h2 style="font-size:18px;">
+           <!-- 楼层标识 -->
+               <i></i>
+           <!-- 楼层内容信息 -->
+               <span style="margin-top: 156px;">电器、数码、医疗器械</span>
+           </h2>
+           <ul style="margin-top: -18px;width: 324px;">
+               <li>
+                厨房小家电
+                   <i></i>
+               </li>
+               <li>
+                个护健康
+                   <i></i>
+               </li>
+               <li>
+                手机/配件
+                   <i></i>
+               </li>
+               <li>
+                医疗器械
+                   <i></i>
+               </li>
+           </ul>
+            </div>
+            <!-- 楼层切换内容 -->
+            <div class="floor-items" style="margin-top: 0px;">
+           <!-- 左边的内容 -->
+             <div class="fi-left">
+                   <div >
+                    <img src="./img/1566258783623583837.jpg" alt="">
+                    <!-- 图片上面的列表菜单-->
+                    <div class="fi-menu" style="margin-top: 1617px; background: #acdffb;">
+                        <!-- 显示的菜单 -->
+                       <ul>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">口腔护理
+                                    <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">面部护肤
+                                   <i>&gt;</i>
+                                </a>
+                           </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">头部护理
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name"> 身体护理
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name"> 香水彩妆
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">女性护理
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">男士护理
+                                   <i>&gt;</i>
+                                </a>
+                                
+                               </li>
+                       </ul>
+                       <!-- 隐藏的菜单 -->
+                       <div>
+
+                       </div>
+                    </div>
+                   </div>
+                   <div style="width: 118px;
+                   height: 489px; background: #e7e7e7;">
+                    <ul style="margin-top: 10px; margin-left: 9px; list-style: none;">
+                        <li>
+                            <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1479940967160854283.jpg" alt="" style="width: 100px;height: 44px;"></a>
+
+                        </li>
+                        <p style="color: #ccc;">---------------------</p>
+                        <li>
+                           <a href="javascript:;" ><img src="http://images.epin.com/data/brandlogo/1479940505787398871.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                       <p style="color: #ccc;">---------------------</p>
+                       <li>
+                           <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024092620887842.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                       <p style="color: #ccc;">---------------------</p>
+                       <li>
+                           <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480019449639485602.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                       <p style="color: #ccc;">---------------------</p>
+                       <li>
+                           <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024008658161598.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                    </ul>
+                   </div>
+             </div>
+             <!-- 右边的内容 -->
+           <div class="fi-right">
+               <div data-type="tabs-div" class="show">
+                    888
+                   <ul>
+                       <li>
+                           <img src="" alt="">
+                           <p></p>
+                           <p></p>
+                       </li>
+                   </ul>
+               </div>
+               <div data-type="tabs-div">
+               内容2
+               </div>
+               <div data-type="tabs-div">
+               内容3
+               </div>
+           </div>
+            </div>
+            <!-- 越洗越水润 -->
+            <div class="fi-bottom">
+               <ul>
+                   <li>
+                       <div class="new-left">
+                            <a href="">
+                           <img src="http://images.epin.com/data/afficheimg/1537398380866409325.jpg" alt="" style="max-width: 238px;
+                           max-height: 132px;
+                           text-align: center;
+                           float: none;">
+                       </a>
+                       </div>
+                      
+                   </li>
+                   <li>
+                       <div class="new-left">
+                           <a href="">
+                           <img src="http://images.epin.com/data/afficheimg/1567126680977515314.jpg" alt="" style="max-width: 238px;
+                           max-height: 132px;
+                           text-align: center;
+                           float: none;">
+                       </a>
+                       </div>
+                       
+                   </li>
+                   <li>
+                       <div class="new-left">
+                           <a href="">
+                           <img src="http://images.epin.com/data/afficheimg/1561080699149202573.jpg" alt=""style="max-width: 238px;
+                           max-height: 132px;
+                           text-align: center;
+                           float: none;">
+                       </a>
+                       </div>
+                       
+                   </li>
+                   <li>
+                       <div class="new-left">
+                           <a href="">
+                          <img src="http://images.epin.com/data/afficheimg/1561080722706629888.jpg" alt=""style="max-width: 238px;
+                          max-height: 132px;
+                          text-align: center;
+                          float: none;">
+                       </a>
+                       </div>
+                      
+                   </li>
+               </ul>
+            </div>
+            <!-- 第四层 -->
+            <div data-title="电器、数码、医疗器械"  class="floor-1 floor-2 floor-3">
+                <div class="raise-img raise-img2">
+            <a href="javascript:;">
+                <img src="http://images.epin.com/data/afficheimg/1566259046997954152.jpg" alt="">
+            </a>
+            </div>
+            <h2 style="font-size:18px;">
+           <!-- 楼层标识 -->
+               <i></i>
+           <!-- 楼层内容信息 -->
+               <span style="margin-top: 156px;">电器、数码、医疗器械</span>
+           </h2>
+           <ul style="margin-top: -17px;width: 324px;">
+               <li>
+                厨房小家电
+                   <i></i>
+               </li>
+               <li>
+                个护健康
+                   <i></i>
+               </li>
+               <li>
+                手机/配件
+                   <i></i>
+               </li>
+               <li>
+                医疗器械
+                   <i></i>
+               </li>
+           </ul>
+            </div>
+            <!-- 楼层切换内容 -->
+            <div class="floor-items" style="margin-top: 0px;">
+            <!-- 左边的内容 -->
+            <div class="fi-left">
+                   <div >
+                    <img src="./img/1566258833651489061.jpg" alt="">
+                    <!-- 图片上面的列表菜单-->
+                    <div class="fi-menu" style="margin-top: 2416px; background: #4eb77f;">
+                        <!-- 显示的菜单 -->
+                       <ul>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">口腔护理
+                                    <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">面部护肤
+                                   <i>&gt;</i>
+                                </a>
+                           </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">头部护理
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name"> 身体护理
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name"> 香水彩妆
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">女性护理
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">男士护理
+                                   <i>&gt;</i>
+                                </a>
+                                
+                               </li>
+                       </ul>
+                       <!-- 隐藏的菜单 -->
+                       <div>
+
+                       </div>
+                    </div>
+                   </div>
+                   <div style="width: 118px;
+                   height: 489px; background: #e7e7e7;">
+                    <ul style="margin-top: 10px; margin-left: 9px; list-style: none;">
+                        <li>
+                            <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1479940967160854283.jpg" alt="" style="width: 100px;height: 44px;"></a>
+
+                        </li>
+                        <p style="color: #ccc;">---------------------</p>
+                        <li>
+                           <a href="javascript:;" ><img src="http://images.epin.com/data/brandlogo/1479940505787398871.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                       <p style="color: #ccc;">---------------------</p>
+                       <li>
+                           <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024092620887842.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                       <p style="color: #ccc;">---------------------</p>
+                       <li>
+                           <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480019449639485602.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                       <p style="color: #ccc;">---------------------</p>
+                       <li>
+                           <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024008658161598.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                    </ul>
+                   </div>
+            </div>
+             <!-- 右边的内容 -->
+            <div class="fi-right">
+               <div data-type="tabs-div" class="show">
+                    888
+                   <ul>
+                       <li>
+                           <img src="" alt="">
+                           <p></p>
+                           <p></p>
+                       </li>
+                   </ul>
+               </div>
+               <div data-type="tabs-div">
+               内容2
+               </div>
+               <div data-type="tabs-div">
+               内容3
+               </div>
+            </div>
+            </div>
+            <!-- 越洗越水润 -->
+            <div class="fi-bottom">
+               <ul>
+                   <li>
+                       <div class="new-left">
+                            <a href="">
+                           <img src="http://images.epin.com/data/afficheimg/1537398380866409325.jpg" alt="" style="max-width: 238px;
+                           max-height: 132px;
+                           text-align: center;
+                           float: none;">
+                       </a>
+                       </div>
+                      
+                   </li>
+                   <li>
+                       <div class="new-left">
+                           <a href="">
+                           <img src="http://images.epin.com/data/afficheimg/1567126680977515314.jpg" alt="" style="max-width: 238px;
+                           max-height: 132px;
+                           text-align: center;
+                           float: none;">
+                       </a>
+                       </div>
+                       
+                   </li>
+                   <li>
+                       <div class="new-left">
+                           <a href="">
+                           <img src="http://images.epin.com/data/afficheimg/1561080699149202573.jpg" alt=""style="max-width: 238px;
+                           max-height: 132px;
+                           text-align: center;
+                           float: none;">
+                       </a>
+                       </div>
+                       
+                   </li>
+                   <li>
+                       <div class="new-left">
+                           <a href="">
+                          <img src="http://images.epin.com/data/afficheimg/1561080722706629888.jpg" alt=""style="max-width: 238px;
+                          max-height: 132px;
+                          text-align: center;
+                          float: none;">
+                       </a>
+                       </div>
+                   </li>
+               </ul>
+            </div>
+            <!-- 第五层 -->
+            <div data-title="电器、数码、医疗器械"  class="floor-1 floor-2 floor-3">
+                <div class="raise-img raise-img2">
+            <a href="javascript:;">
+                <img src="http://images.epin.com/data/afficheimg/1566259060984702861.jpg" alt="">
+            </a>
+            </div>
+            <h2 style="font-size:18px;">
+           <!-- 楼层标识 -->
+               <i></i>
+           <!-- 楼层内容信息 -->
+               <span style="margin-top: 156px;">电器、数码、医疗器械</span>
+           </h2>
+           <ul style="margin-top: -17px;width: 324px;">
+               <li>
+                厨房小家电
+                   <i></i>
+               </li>
+               <li>
+                个护健康
+                   <i></i>
+               </li>
+               <li>
+                手机/配件
+                   <i></i>
+               </li>
+               <li>
+                医疗器械
+                   <i></i>
+               </li>
+           </ul>
+            </div>
+            <!-- 楼层切换内容 -->
+            <div class="floor-items" style="margin-top: 0px;">
+            <!-- 左边的内容 -->
+            <div class="fi-left">
+                   <div >
+                    <img src="./img/1572304498069583165.jpg" alt="">
+                    <!-- 图片上面的列表菜单-->
+                    <div class="fi-menu" style="margin-top: 3214px;background: #ff85ae;">
+                        <!-- 显示的菜单 -->
+                       <ul>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">口腔护理
+                                    <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">面部护肤
+                                   <i>&gt;</i>
+                                </a>
+                           </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">头部护理
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name"> 身体护理
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name"> 香水彩妆
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">女性护理
+                                   <i>&gt;</i>
+                                </a>
+                               </li>
+                            <li>
+                                <a href="javascript:;" class="oneClass-name">男士护理
+                                   <i>&gt;</i>
+                                </a>
+                                
+                               </li>
+                       </ul>
+                       <!-- 隐藏的菜单 -->
+                       <div>
+
+                       </div>
+                    </div>
+                   </div>
+                   <div style="width: 118px;
+                   height: 489px; background: #e7e7e7;">
+                    <ul style="margin-top: 10px; margin-left: 9px; list-style: none;">
+                        <li>
+                            <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1479940967160854283.jpg" alt="" style="width: 100px;height: 44px;"></a>
+
+                        </li>
+                        <p style="color: #ccc;">---------------------</p>
+                        <li>
+                           <a href="javascript:;" ><img src="http://images.epin.com/data/brandlogo/1479940505787398871.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                       <p style="color: #ccc;">---------------------</p>
+                       <li>
+                           <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024092620887842.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                       <p style="color: #ccc;">---------------------</p>
+                       <li>
+                           <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480019449639485602.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                       <p style="color: #ccc;">---------------------</p>
+                       <li>
+                           <a href="javascript:;"><img src="http://images.epin.com/data/brandlogo/1480024008658161598.jpg" alt=""style="width: 100px;height: 44px;"></a>
+                       </li>
+                    </ul>
+                   </div>
+            </div>
+             <!-- 右边的内容 -->
+            <div class="fi-right">
+               <div data-type="tabs-div" class="show">
+                    888
+                   <ul>
+                       <li>
+                           <img src="" alt="">
+                           <p></p>
+                           <p></p>
+                       </li>
+                   </ul>
+               </div>
+               <div data-type="tabs-div">
+               内容2
+               </div>
+               <div data-type="tabs-div">
+               内容3
+               </div>
+            </div>
+            </div>
+            <!-- 越洗越水润 -->
+            <div class="fi-bottom">
+               <ul>
+                   <li>
+                       <div class="new-left">
+                            <a href="">
+                           <img src="http://images.epin.com/data/afficheimg/1537398380866409325.jpg" alt="" style="max-width: 238px;
+                           max-height: 132px;
+                           text-align: center;
+                           float: none;">
+                       </a>
+                       </div>
+                      
+                   </li>
+                   <li>
+                       <div class="new-left">
+                           <a href="">
+                           <img src="http://images.epin.com/data/afficheimg/1567126680977515314.jpg" alt="" style="max-width: 238px;
+                           max-height: 132px;
+                           text-align: center;
+                           float: none;">
+                       </a>
+                       </div>
+                       
+                   </li>
+                   <li>
+                       <div class="new-left">
+                           <a href="">
+                           <img src="http://images.epin.com/data/afficheimg/1561080699149202573.jpg" alt=""style="max-width: 238px;
+                           max-height: 132px;
+                           text-align: center;
+                           float: none;">
+                       </a>
+                       </div>
+                       
+                   </li>
+                   <li>
+                       <div class="new-left">
+                           <a href="">
+                          <img src="http://images.epin.com/data/afficheimg/1561080722706629888.jpg" alt=""style="max-width: 238px;
+                          max-height: 132px;
+                          text-align: center;
+                          float: none;">
+                       </a>
+                       </div>
+                      
+                   </li>
+                   <li>
+                    <div class="new-left">
+                        <a href="">
+                        <img src="http://images.epin.com/data/afficheimg/1561080699149202573.jpg" alt=""style="max-width: 240px;
+                        max-height: 132px;
+                        text-align: center;
+                        float: none;">
+                    </a>
+                    </div>
+                    
+                </li>
+               </ul>
+            </div>
+        </div>
+    </div>  
+    <!-- 底部 -->
+   <div id="footer">
+    <div class="global-footer-lazy">
+         <div class="ecsc-service-flow">
+              <div class="ecsc-service-item">
+                <i class="ecsc-zp"></i>
+                <span>正品保障</span>
+              </div>
+              <div class="ecsc-service-item">
+                <i class="ecsc-qt"></i>
+                <span>七天包退</span>
+              </div>
+              <div class="ecsc-service-item">
+                <i class="ecsc-hp"></i>
+                <span>好评如潮</span>
+              </div>
+              <div class="ecsc-service-item">
+                <i class="ecsc-sd"></i>
+                <span>闪电发货</span>
+              </div>
+              <div class="ecsc-service-item">
+                <i class="ecsc-ry"></i>
+                <span>权威荣誉</span>
+              </div>
+         </div>
+    </div>
+   <div class="footer-desc">
+       <div class="footer-desc-list">
+           <!-- 1 -->
+           <dl>
+                <dt>新手帮助</dt>
+                <dd>
+                    <a href="">交易条款协议</a>
+                </dd>
+                <dd>
+                    <a href="">注册新用户</a>
+                </dd>
+                <dd>
+                    <a href="">找回密码</a>
+                </dd>
+                <dd>
+                    <a href="">联系我们</a>
+                </dd>
+           </dl>
+           <!-- 2 -->
+           <dl>
+               
+            <dt>购物指南</dt>
+            <dd>
+                <a href="">订购流程</a>
+            </dd>
+            <dd>
+                <a href="">验货与签收</a>
+            </dd>
+            <dd>
+                <a href="">订单配送及查询</a>
+            </dd>
+           </dl>
+           <!-- 3 -->
+        <dl>
+            <dt>支付及配送</dt>
+                <dd>
+                    <a href="">支付方式</a>
+                </dd>
+                <dd>
+                    <a href="">配送方式</a>
+                </dd>
+                <dd>
+                    <a href="">配送时间及运费</a>
+                </dd>
+        </dl>
+        <!-- 4 -->
+        <dl>
+            <dt>售后服务</dt>
+            <dd>
+                <a href="">最新七天无理由退换货政策</a>
+            </dd>
+            <dd>
+                <a href="">退款说明</a>
+            </dd>
+            <dd>
+                <a href="">发票说明</a>
+            </dd>
+            <dd>
+                <a href="">退款流程</a>
+            </dd>
+        </dl>
+        <!-- 5 -->
+        <dl class="contact-us">
+            <dt>宜品客服</dt>
+                <dd>
+                    <a href="">在线咨询</a>
+                </dd>
+                <dd>
+                    <a href="">关于宜品</a>
+                </dd>
+                <dd>
+                    <a href="">常见问题</a>
+                </dd>
+        </dl>
+        <!-- 6 -->
+        <dl class="QR_code">
+            <div class="QR_code_wx">
+                <img src="./img/footad-bg.png" alt="" style="width: 78px;height: 78px;">
+                <p>宜品官方微信</p>
+            </div>
+            <div class="QR_code_app">
+                <img src="./img/app_qr.png" alt="" style="width: 78px;height: 78px;">
+                <p>宜品手机APP</p>
+            </div>
+        </dl>
+       </div>
+       <div class="num_email" style="background: #e4e4e4;">
+        <span class="tel_num">
+            服务热线：400-160-2566    9:00-21:00
+        </span>
+        &nbsp;&nbsp;
+        <span class="email">kefu@epin.com</span>
+       </div>
+       <!-- 最后一块 -->
+       <div class="footer-desc-copyright" style="margin-top: 65px;">
+           <p class="footer-ecscinfo">
+               <a href="" style="color: #686868;">首页</a>
+               |
+               <a href="" style="color: #686868;">联系我们</a>
+           </p>
+           <b style="color: #686868;">
+            ICP备案证书号:
+            <a href="" style="color: #686868;">豫ICP备16023223号</a>
+           </b>
+           <br style="color: #686868;">
+           <p style="color: #686868;">Copyright ©&nbsp;&nbsp;  2015-2020&nbsp;&nbsp;  ，华商创展（中国）有限公司版权所有</p>
+           
+           <br>
+           <!-- <p>
+            共执行 190 个查询，用时 0.689527 秒，在线 945 人，Gzip 已禁用，占用内存 16.525 MB
+            <img src="" alt="">
+           </p> -->
+       </div>
+   </div>
+   
+   </div>
 </body>
+
+</script>
 
 </html>

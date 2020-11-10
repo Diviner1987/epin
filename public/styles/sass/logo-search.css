@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#logo-search {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 22px 0 0 0;
+}
+
+#logo-search > div:nth-of-type(1) {
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo-search > div:nth-of-type(1) img {
+  width: 220px;
+  height: 58px;
+}
+
+.ser {
+  margin-left: 110px;
+}
+
+.sou {
+  margin-top: 17px;
+  margin-left: 20px;
+  width: 458px;
+  height: 35px;
+  line-height: 35px;
+  border: 2px solid #ec5151;
+}
+
+.key {
+  margin-left: 125px;
+  float: left;
+}
+
+.key ul > li > a:hover {
+  color: #ec5151;
+}
+
+.key > ul > li {
+  float: left;
+  list-style: none;
+}
+
+.key > ul > li > a:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.key > ul > li > a {
+  font-size: 12px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#logo-search > div:nth-of-type(3) {
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo-search > div:nth-of-type(3) img {
+  background: url(../../img/ecsc_icon.png) -404px -2px no-repeat;
+}

@@ -1,0 +1,58 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// tab切换
+.tabs {
+    width: 971px;
+    height: auto !important;
+    min-height: 571px;
+    border: 1px solid #ec5151;
+    position: absolute;
+    top: 44px;
+    background: #f9f9f9;
+    display: none;
+}
+
+//轮播
+.al-lunbo {
+    width: 1579px;
+    // height: 400px;
+    // background: red;
+    position: absolute;
+    left: 0px;
+    top: 44px;
+    // 轮播图
+    .slider {
+        width: 1579px;
+        // height: 400px;
+        // background: chartreuse;
+        a {
+            text-decoration: none;
+        }
+        img {
+            width: 728px;
+            height: 436px;
+        }
+    }
+    // 小图
+    .small-lunbo {
+        position: absolute;
+        left: 0px;
+        width: 728px;
+        // height: 400px;
+        .small-ul {
+            margin-left: -40px;
+            // margin-top: 56px;
+        }
+        .small-ul>li {
+            list-style: none;
+            float: left;
+        }
+    }
+    .infor-a:hover {
+        color: #ec5151 !important;
+    }
+}

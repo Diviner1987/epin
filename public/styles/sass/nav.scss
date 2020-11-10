@@ -1,0 +1,139 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//导航栏css
+// 版心宽度
+#container {
+    width: 100%;
+    // background-color: #efefef;
+}
+
+//导航栏宽度
+.site-nav {
+    width: 1200px;
+    // background: lightblue;
+    display: flex;
+    margin: 0 auto;
+}
+
+// 送货至
+.site-nav>div:nth-of-type(1) {
+    // width: 200px;
+    // background: chocolate;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    // 送货
+    .sh {
+        justify-content: space-around;
+        align-items: center;
+        ul>li {
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            float: left;
+            margin-right: 20px;
+            font-size: 12px;
+            color: rgba($color: #000000, $alpha: 0.8);
+        }
+    }
+    //登录注册的相同样式
+    .ash {
+        float: left;
+        font-size: 12px;
+    }
+    //登录注册
+    .dz {
+        justify-content: space-around;
+        align-items: center;
+        //请登录
+        a:nth-of-type(1) {
+            color: #e23435;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        //注册
+        a:nth-of-type(2) {
+            color: rgba($color: #000000, $alpha: 0.8);
+            text-decoration: none;
+        }
+    }
+}
+
+//我的订单
+.site-nav>div:nth-of-type(2) {
+    // width: 1000px;
+    // background: cornflowerblue;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-left: 340px;
+    // margin-right: 10px;
+    // 订单，服务
+    ul:nth-of-type(1)>li {
+        list-style: none;
+        float: left;
+        margin-top: 5px;
+        a {
+            line-height: 20px;
+            font-size: 12px;
+            text-decoration: none;
+            color: rgba($color: #000000, $alpha: 0.8);
+            padding: 0 15px;
+        }
+        a:hover {
+            color: #e23435;
+        }
+        //相同下拉span的样式
+        .slide {
+            margin-right: 2px;
+            margin-left: -10px;
+        }
+        //span的颜色
+        span {
+            color: #bbb;
+        }
+    }
+    // 购物车
+    ul:nth-of-type(2)>li:nth-of-type(1) {
+        margin-left: 40px;
+        font-size: 12px;
+        display: block;
+        float: left;
+        position: absolute;
+        top: 0px;
+        right: 230px;
+    }
+    ul:nth-of-type(2)>li:nth-of-type(2) {
+        // margin-left: 17px;
+        z-index: 10000;
+        position: absolute;
+        top: 10px;
+        right: 240px;
+        a {
+            color: white;
+            font-size: 14px;
+        }
+        span {
+            color: white;
+            margin-left: 10px;
+        }
+    }
+    ul:nth-of-type(2)>li {
+        list-style: none;
+        float: left;
+        padding: 10px auto;
+        a {
+            font-size: 12px;
+            text-decoration: none;
+            color: rgba($color: #000000, $alpha: 0.8);
+        }
+        span {
+            color: #bbb;
+        }
+    }
+}

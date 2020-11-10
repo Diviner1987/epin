@@ -5,14 +5,15 @@ const express = require('express');
 const path = require('path');
 //10.引入cookie模块--在所有的路由中间件之前去使用
 const cookieParser = require('cookie-parser');
+const createError = require('http-errors');
 
 //3.调用函数生成应用
 const app = express();
 //8.路由导入---自定义的模块,命名是小驼峰命名，还要写模块的地址
 const usersRouter = require('./router/users');
 //11.其他的模块
-const productRouter = require('./router/product')
-    //4.配置服务
+// const productRouter = require('./router/product');
+//4.配置服务
 let conf = {
     port: 8888,
     host: 'localhost'
@@ -27,9 +28,18 @@ app.use(express.urlencoded({ extended: true })); // post表单数据解析成jso
 app.use(cookieParser());
 //9.使用路由中间件--(基础路径，导入路由中间件,在基础路径上导出响应的数据)
 app.use('/users', usersRouter);
-//12.使用其他的模块
-app.use('/product', productRouter);
-//5.开启服务监听
+//定义错误中间件
+app.use(function(req, res, next) {
+    next(createError(404));
+});
+//将错误当作参数传递过来--将错误返回成一个页面
+app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.location('/html/404.html');
+    })
+    //12.使用其他的模块
+    // app.use('/product', productRouter);
+    //5.开启服务监听
 app.listen(conf.port, conf.host, () => {
     console.log(`srever is running on http://${conf.host}:${conf.port}`);
 });
