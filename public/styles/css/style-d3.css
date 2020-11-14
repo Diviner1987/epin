@@ -8088,8 +8088,8 @@ a.btn-stages:hover {
     font-family: arial, "宋体";
     overflow: hidden;
     color: #333;
-    color: #9fa0a0\9;
-    float: left;
+    /* color: #9fa0a0\9; */
+    /* float: left; */
 }
 
 .form .item .select {
@@ -8100,7 +8100,7 @@ a.btn-stages:hover {
 }
 
 .form .item i {
-    background: url(images/login_icons_new.png) no-repeat;
+    /* background: url(images/login_icons_new.png) no-repeat; */
     width: 20px;
     height: 26px;
     position: absolute;
@@ -8267,7 +8267,7 @@ a.btn-stages:hover {
 .form .item label.strengthA,
 .form .item label.strengthB,
 .form .item label.strengthC {
-    background: url(images/login_icons_new.png) 0 -124px;
+    /* background: url(images/login_icons_new.png) 0 -124px; */
 }
 
 .form .item label.strength b {
@@ -8276,7 +8276,7 @@ a.btn-stages:hover {
     top: 0;
     display: block;
     height: 10px;
-    background: url(images/login_icons_new.png) 0 -137px;
+    /* background: url(images/login_icons_new.png) 0 -137px; */
 }
 
 .form .item label.strength span {

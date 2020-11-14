@@ -58,13 +58,6 @@ import sTab from './smallpic.js'; //小图切换
                     </ul>
                 </div>
             </div>
-            
-            <!-- 详情页 -->
-            <div class="ecsc-goods-layout">
-            ${res.details}
-            </div>
-
-        
             `;
 
             // 渲染页面---发现元素点击时将id值存进cookie里面

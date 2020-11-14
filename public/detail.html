@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="./styles/sass/index.css">
 
     <!-- 入口文件 -->
-    <script src="./js/detail.js" type="module"></script>
+
     <link rel="stylesheet" href="./styles/css/style-d3.css">
-    <!-- <link rel="stylesheet" href="./styles/css/style.css"> -->
+    <link rel="stylesheet" href="./styles/css/style.css">
     <link rel="stylesheet" href="./styles/css/base.css">
+    <script src="./js/detail.js" type="module"></script>
     <!-- <link rel="stylesheet" href="./styles/css/glass.css"> -->
 
 </head>
@@ -87,23 +88,23 @@
             </div>
         </div>
     </div>
-    <div>
-        <!-- logo.搜索框 -->
-        <div id="logo-search">
-            <!-- logo -->
-            <div>
-                <img src="./img/logo.gif" alt="">
-            </div>
-            <!-- 搜索框 -->
-            <div>
-                <div class="row">
-                    <!-- /.col-lg-6 -->
-                    <div class="col-lg-12 ser">
-                        <div class="input-group sou">
-                            <input type="text" class="form-control" placeholder="商品">
 
-                            <div class="input-group-btn an">
-                                <button type="button" class="btn btn-default " style="outline-style: none;background-color: #ec5151;color: #fff;">搜索 
+    <!-- logo.搜索框 -->
+    <div id="logo-search">
+        <!-- logo -->
+        <div>
+            <img src="./img/logo.gif" alt="">
+        </div>
+        <!-- 搜索框 -->
+        <div>
+            <div class="row">
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-12 ser">
+                    <div class="input-group sou">
+                        <input type="text" class="form-control" placeholder="商品">
+
+                        <div class="input-group-btn an">
+                            <button type="button" class="btn btn-default " style="outline-style: none;background-color: #ec5151;color: #fff;">搜索 
                         </div>
                         <!-- /btn-group -->
                     </div>
@@ -147,11 +148,13 @@
         </div>
         </div> 
         <!-- 商品的导航栏 -->
-       <div id="shopping">
+    <div id="shopping">
         <!--商品导航栏  -->
-        <div>
-            <div >
-                <!-- 全部商品上面的导航栏 -->
+    <div>
+        
+    <!-- 全部商品上面的导航栏 -->
+    <div >
+                
                 <div class="ver-nav" style="margin-top: 328px;">
                     <a href="javascript:;">全部商品分类</a>
                 </div>
@@ -222,7 +225,7 @@
                     </div>
                     <!-- 隐藏的垂直导航栏 --tab切换-->
                 </div>
-            </div>
+    </div>
             <!-- 水平导航栏 -->
             <div class="al-nav" style="width: 1200px;">
                 <ul>
@@ -250,7 +253,7 @@
                     <div class="tabs">
                 </div>
             </div>
-        </div>
+            </div>
         </div>
         <!-- 详情页面 -->
         <div class="ecsc-breadcrumb w1200" style="float: left;margin-left: -1420px;margin-top: 55px;">
@@ -265,22 +268,22 @@
         </div>
        </div>
     <!-- 详情页图片 -->
-       <div style="width: 1200px;margin: -710px auto;"  class="product-info">
+    <div style="width: 1200px;margin: -710px auto;"  class="product-info">
         <!-- 详情页左边第一部分 -->
-         <div class="infor-1">
-           
+        <div class="infor-1">
             <!-- <div style="cursor: pointer;">
                 <a href="" >
                     <img src="./img/1-1.jpg" alt="">
                 </a>
             </div> -->
-            <div class="smallbox">
+           <div class="smallbox">
                 <a>
                     <span class="img-wrap">
                         <img src="./img/1-1.jpg" alt="" class="smallpic">
                         <div class="movebox"></div>
                     </span>
                 </a>
+           
                 <!-- <div class="bigbox">
                 <img src="./img/1-1.jpg" alt="" class="bigpic">
                 </div>  -->
@@ -308,7 +311,7 @@
                 </ul>
             </div>
            
-           
+        </div>
         <!-- 详情页中间部分 -->
         <div class="infor-2">
             <div class="done-title">
@@ -346,131 +349,326 @@
                 <div class="seller-logo">
                                     <a href="brand.php?id=5268&amp;mbid=1047" target="_blank">健康美食</a>
                                 </div>
-                <div class="seller-infor" style="display:none;"><a href="brand.php?id=5268&amp;mbid=1047" title="新郑健康好枣" target="_blank" class="name">新郑健康好枣</a><i class="icon arrow-show-more"></i></div>
-                        <div class="seller-kefu">
-                                 <a id="ykf" onclick="qimoChatClick()" href="javascript:;" goods_id="34683" class="seller-btn" ><i class="icon"></i><span style="margin-left: -15px;">在线客服</span> </a>
-                        </div>
+                <div class="seller-infor" style="display:none;">
+                    <a href="brand.php?id=5268&amp;mbid=1047" title="新郑健康好枣" target="_blank" class="name">新郑健康好枣</a>
+                    <i class="icon arrow-show-more"></i>
+                </div>
+                <div class="seller-kefu">
+                    <a id="ykf" onclick="qimoChatClick()" href="javascript:;" goods_id="34683" class="seller-btn" ><i class="icon"></i><span style="margin-left: -15px;">在线客服</span></a>
+                </div>
             </div>
         </div>
-
-        <!-- 详情页底下详情部分 -->
-        <div class="ecsc-goods-layout">
-            <div class="ecsc-layout-210">               
-                    <div class="m goods_related_cat">
-                    <div class="mt"><h2>相关分类</h2></div>
-                    <div class="mc">
-                        <ul class="lh">
-                        <li><a href="category.php?id=721" target="_blank">核桃</a></li>
-                        <li><a href="category.php?id=722" target="_blank">夏威夷果</a></li>
-                        <li><a href="category.php?id=723" target="_blank">碧根果</a></li>
-                        <li><a href="category.php?id=724" target="_blank">开心果</a></li>
-                        <li><a href="category.php?id=725" target="_blank">腰果/松子</a></li>
-                        <li><a href="category.php?id=726" target="_blank">花生/板栗</a></li>
-                        <li><a href="category.php?id=727" target="_blank">杏仁</a></li>
-                        <li><a href="category.php?id=728" target="_blank">瓜子</a></li>
-                        <li><a href="category.php?id=729" target="_blank">豆类</a></li>
-                        <li><a href="category.php?id=1607" target="_blank">巴达木</a></li>
-                        <li><a href="category.php?id=1608" target="_blank">坚果礼盒</a></li>
-                        </ul>
-                    </div>
-                </div>
-                    <div class="m goods_brand">
-                    <div class="mt"><h2>同类其他品牌</h2></div>
-                    <div class="mc">
-                        <ul class="lh">
-                        <li><a href="brand.php?id=3695" target="_blank">摇篮果</a></li>
-                        <li><a href="brand.php?id=4667" target="_blank">诚可成</a></li>
-                        <li><a href="brand.php?id=5074" target="_blank">波波猴</a></li>
-                        <li><a href="brand.php?id=5226" target="_blank">轻伴</a></li>
-                        <li><a href="brand.php?id=5248" target="_blank">美食匠坊</a></li>
-                        <li><a href="brand.php?id=5268" target="_blank">健康美食</a></li>
-                        </ul>
-                    </div>
-                </div>
-                            
-                <div id="charts" class="m">
-                    <div class="mt"><h2>最新排行榜</h2></div>
-                    <div class="mc">
-                        <ul class="charts-tab">
-                            <li class="first on">新品<i></i></li>
-                            <li>推荐<i></i></li>
-                            <li class="last">热销<i></i></li>
-                        </ul>
-                        <div class="charts-list">
-                    </div>
-                </div>
     </div>
 
 
-    <div class="history" id="history" style="display: block;">
-        <div class="mt">
-            <h2>最近浏览</h2>
-            <a onclick="clear_history()" class="clear_history ftx-05" href="javascript:void(0);">清空</a>
-        </div>
-        <div class="mc" id="history_list">
-            <ul>
-                <li>
-                    <div class="item">
-                        <div class="p-img"><a href="goods.php?id=34683" target="_blank"><img src="https://cbu01.alicdn.com/img/ibank/2020/201/349/22117943102_1336326719.jpg_300x300.jpg" width="72" height="72" class="lazy" data-original="https://cbu01.alicdn.com/img/ibank/2020/201/349/22117943102_1336326719.jpg_300x300.jpg" style="display: inline-block;"></a></div>
-                        <div style="width:90px; float:left;">
-                            <div class="p-name"><a href="goods.php?id=34683" target="_blank">休闲零食500g坚果巴旦木奶香味</a></div>
-                            <div class="p-price">¥196.00</div>
-                            <div class="p-num">售出：<strong> 0</strong>笔</div>
+
+    <!-- 详情页底部的详情介绍 -->
+    <div class="w1200">
+        <div class="ecsc-goods-layout">
+                <div class="ecsc-layout-210">
+                <form method="GET" action="merchants_store.php" class="sort" name="listform" style="display: none;">
+                    <div id="sp-search" class="m">
+                        <div class="mt"><h2>店内搜索</h2></div>
+                        <div class="mc">
+                            <p class="sp-form-item1"><input type="text" name="keyword" id="sp-keyword" value="" placeholder="关键字"></p>
+                            <p class="sp-form-item2"><input type="text" id="sp-price" name="price_min" class="sp-price" value="" placeholder="价格"><span>~</span><input type="text" name="price_max" class="sp-price" id="sp-price1" value="" placeholder="价格"></p>
+                            <p class="sp-form-item3"><i class="icon"></i><input type="submit" value="搜索" id="btnShopSearch"></p>
+                            <input type="hidden" name="merchant_id" value="7814">
                         </div>
                     </div>
-                </li>
-            </ul>
-        </div>    
-    </div>
-</div>
-<div class="ecsc-goods-main">
-    <!-- 商品详情 -->
-                <div class="ecsc-single-desc desc">
-                    <div class="goods-detail-title goods-detail-mt" style="top: 0px; position: absolute;">
-                        <ul class="tabs">
-                            <li class="tab_item first current">商品详情</li>
-                        </ul>
+                </form>
+                <div id="sp-category" class="m" style="display: none;">
+                    <div class="mt">
+                        <h2>店内分类</h2>
                     </div>
-    
-                    <div class="floors">
-                        <div class="ecsc-goods-item fment">
-                            <dl class="goods-para">
-                                <dd class="column"><span>商品名称：休闲零食500g坚果巴旦木奶香味</span></dd>
-                                <dd class="column"><span>商品编号：630398483371</span></dd>
-                                <dd class="column"><span>上架时间：2020-10-20 15:36:32</span></dd>
+                    <div class="mc">
+                        <h2>查看全部商品</h2>
+                        <dl class="open">
+                            <dt><s class="icon"></s><span class="cate_name">休闲食品</span></dt>
+                            <dd><a href="merchants_store.php?merchant_id=299&amp;id=1501" target="_blank">进口饼干</a></dd>
+                            <dd><a href="merchants_store.php?merchant_id=299&amp;id=1508" target="_blank">坚果炒货</a></dd>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">大米</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">男包</span></dt>
+                            <dd><a href="merchants_store.php?merchant_id=1208&amp;id=1531" target="_blank">男士公文包</a></dd>
+                            <dd><a href="merchants_store.php?merchant_id=1208&amp;id=1532" target="_blank">单肩/斜跨包</a></dd>
+                            <dd><a href="merchants_store.php?merchant_id=1208&amp;id=1533" target="_blank">手包</a></dd>
+                            <dd><a href="merchants_store.php?merchant_id=1208&amp;id=1534" target="_blank">钱包</a></dd>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">果汁饮料</span></dt>
+                            <dd><a href="merchants_store.php?merchant_id=299&amp;id=1503" target="_blank">进口果汁</a></dd>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">女包</span></dt>
                             </dl>
-                            <dl class="goods-para" style="margin-top:0px;">
-                                <dt class="hide">商品属性</dt>
-                                <dd class="column"><span title="郑风源">品牌：郑风源</span></dd>
-                                <dd class="column"><span title="包装">售卖方式：包装</span></dd>
-                                <dd class="column"><span title="6952345601876">商品条形码：6952345601876</span></dd>
-                                <dd class="column"><span title="否">是否进口：否</span></dd>
-                                <dd class="column"><span title="郑州">原产地：郑州</span></dd>
-                                <dd class="column"><span title="SC11741018400368">生产许可证编号：SC11741018400368</span></dd>
-                                <dd class="column"><span title="310">保质期：310</span></dd>
-                                <dd class="column"><span title="GB19300">产品标准号：GB19300</span></dd>
-                                <dd class="column"><span title="500g">净含量（规格）：500g</span></dd>
-                                <dd class="column"><span title="SZZ-ZF0012">货号：SZZ-ZF0012</span></dd>
-                                <dd class="column"><span title="全年">热卖月份：全年</span></dd>
-                                <dd class="column"><span title="SZS00001">供应商编号：SZS00001</span></dd>
+                            <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">冲调茶饮</span></dt>
+                            <dd><a href="merchants_store.php?merchant_id=299&amp;id=1505" target="_blank">进口果酱</a></dd>
+                            <dd><a href="merchants_store.php?merchant_id=299&amp;id=1506" target="_blank">冲饮粉</a></dd>
+                            <dd><a href="merchants_store.php?merchant_id=299&amp;id=1507" target="_blank">进口麦片</a></dd>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">拉杆箱</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">进口速食/调味料/粮油</span></dt>
+                            <dd><a href="merchants_store.php?merchant_id=299&amp;id=1511" target="_blank">意大利面</a></dd>
+                            <dd><a href="merchants_store.php?merchant_id=299&amp;id=1512" target="_blank">橄榄油</a></dd>
+                            <dd><a href="merchants_store.php?merchant_id=299&amp;id=1513" target="_blank">进口调味料</a></dd>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">户外运动背包</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">时尚女装</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">SALE</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">青春玄幻系列</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">孕婴护理</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">孕婴洗浴</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">孕婴服饰</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">饰品</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">玉饰</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">眼镜</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">儿童读物</span></dt>
+                            <dd><a href="merchants_store.php?merchant_id=69&amp;id=1497" target="_blank">儿童名著</a></dd>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">3D硬足金</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">白酒</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">进口洗化</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">鱼竿</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">鱼线</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">挂烫机</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">拉链箱</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">铝框箱</span></dt>
+                        </dl>
+                        <dl class="">
+                            <dt><s class="icon"></s><span class="cate_name">男表，女表，石英表，机械表，情侣表，光能表</span></dt>
                             </dl>
-                        <div class="goods-detail-banner">
-                        <div>
-                            <div>
-                                <p>
-                            <img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/666/912/22030219666_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/209/686/22119686902_1336326719.jpg"><br><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/387/612/22030216783_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/161/642/22030246161_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/290/317/22119713092_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/177/296/22119692771_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/494/896/22119698494_1336326719.jpg"><br><br><br><br><br><br>
-                               </p>                        
+                    </div>
+                </div>
+                                            
+                        <div class="m goods_related_cat">
+                        <div class="mt"><h2>相关分类</h2></div>
+                        <div class="mc">
+                            <ul class="lh">
+                                                        <li><a href="category.php?id=721" target="_blank">核桃</a></li>
+                                                        <li><a href="category.php?id=722" target="_blank">夏威夷果</a></li>
+                                                        <li><a href="category.php?id=723" target="_blank">碧根果</a></li>
+                                                        <li><a href="category.php?id=724" target="_blank">开心果</a></li>
+                                                        <li><a href="category.php?id=725" target="_blank">腰果/松子</a></li>
+                                                        <li><a href="category.php?id=726" target="_blank">花生/板栗</a></li>
+                                                        <li><a href="category.php?id=727" target="_blank">杏仁</a></li>
+                                                        <li><a href="category.php?id=728" target="_blank">瓜子</a></li>
+                                                        <li><a href="category.php?id=729" target="_blank">豆类</a></li>
+                                                        <li><a href="category.php?id=1607" target="_blank">巴达木</a></li>
+                                                        <li><a href="category.php?id=1608" target="_blank">坚果礼盒</a></li>
+                                                    </ul>
+                        </div>
+                    </div>
+                                
+                        <div class="m goods_brand">
+                        <div class="mt"><h2>同类其他品牌</h2></div>
+                        <div class="mc">
+                            <ul class="lh">
+                                                        <li><a href="brand.php?id=3695" target="_blank">摇篮果</a></li>
+                                                        <li><a href="brand.php?id=4667" target="_blank">诚可成</a></li>
+                                                        <li><a href="brand.php?id=5074" target="_blank">波波猴</a></li>
+                                                        <li><a href="brand.php?id=5226" target="_blank">轻伴</a></li>
+                                                        <li><a href="brand.php?id=5248" target="_blank">美食匠坊</a></li>
+                                                        <li><a href="brand.php?id=5268" target="_blank">健康美食</a></li>
+                                                    </ul>
+                        </div>
+                    </div>
+                                
+                    <div id="charts" class="m">
+                        <div class="mt"><h2>最新排行榜</h2></div>
+                        <div class="mc">
+                            <ul class="charts-tab">
+                                <li class="first on">新品<i></i></li>
+                                <li>推荐<i></i></li>
+                                <li class="last">热销<i></i></li>
+                            </ul>
+                            <div class="charts-list">
                             </div>
                         </div>
                     </div>
+        
+              </div>
+                <div class="ecsc-goods-main">
+                    <div class="ecsc-single-desc desc">
+                        <div class="goods-detail-title goods-detail-mt" style="top: 0px; position: absolute;">
+                            <ul class="tabs">
+                                <li class="tab_item first current">商品详情</li>
+                                <li class="tab_item">商品评论(1)</li>
+                                <!--<li class="tab_item">网友讨论圈</li>-->
+                            </ul>
+                        </div>
+        
+                        <div class="floors">
+                            <div class="ecsc-goods-item fment">
+                                <dl class="goods-para">
+                                    <dd class="column"><span>商品名称：休闲零食500g坚果巴旦木奶香味</span></dd>
+                                    <dd class="column"><span>商品编号：630398483371</span></dd>
+                                    
+                                    <!--<dd class="column"><span>店铺：<a href="merchants_store.php?merchant_id=7814" title="新郑健康好枣" target="_blank">新郑健康好枣</a></span></dd>-->
+                                                                                            <dd class="column"><span>上架时间：2020-10-20 15:36:32</span></dd>
+                                                            </dl>
+                                                        <dl class="goods-para" style="margin-top:0px;">
+                                        
+                                    <dt class="hide">商品属性</dt>
+                                                                <dd class="column"><span title="郑风源">品牌：郑风源</span></dd>
+                                                                <dd class="column"><span title="包装">售卖方式：包装</span></dd>
+                                                                <dd class="column"><span title="6952345601876">商品条形码：6952345601876</span></dd>
+                                                                <dd class="column"><span title="否">是否进口：否</span></dd>
+                                                                <dd class="column"><span title="郑州">原产地：郑州</span></dd>
+                                                                <dd class="column"><span title="SC11741018400368">生产许可证编号：SC11741018400368</span></dd>
+                                                                <dd class="column"><span title="310">保质期：310</span></dd>
+                                                                <dd class="column"><span title="GB19300">产品标准号：GB19300</span></dd>
+                                                                <dd class="column"><span title="500g">净含量（规格）：500g</span></dd>
+                                                                <dd class="column"><span title="SZZ-ZF0012">货号：SZZ-ZF0012</span></dd>
+                                                                <dd class="column"><span title="全年">热卖月份：全年</span></dd>
+                                                                <dd class="column"><span title="SZS00001">供应商编号：SZS00001</span></dd>
+                                                                                        </dl>
+                                                        <div class="goods-detail-banner">
+                                                                <div></div><p><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/666/912/22030219666_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/209/686/22119686902_1336326719.jpg"><br><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/387/612/22030216783_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/161/642/22030246161_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/290/317/22119713092_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/177/296/22119692771_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/494/896/22119698494_1336326719.jpg"><br><br><br><br><br><br></p>                        </div>
+                            </div>
+                            <div class="ecsc-goods-item fment pinglun" id="comment" style="display: none;">
+                                <!--<div class="goods-detail-title">-->
+                                    <!--<h2>商品评价(1)</h2>-->
+                                    <!--<a href="user.php?act=comment_list" class="btn-comment" target="_blank">发表评论</a>-->
+                                <!--</div>-->
+                                <div class="overview-detail">
+                                    <div class="rate">
+                                        <strong>100<span>%</span></strong>
+                                        <span class="hp">好评率</span>
+                                    </div>
+                                    <div class="percent">
+                                        <dl>
+                                            <dt>好评<span>(100%)</span></dt>
+                                            <dd><div style="width: 100px;"></div></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>中评<span>(0%)</span></dt>
+                                            <dd><div style="width: 0px;"></div></dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>差评<span>(0%)</span></dt>
+                                            <dd><div style="width: 0px;"></div></dd>
+                                        </dl>
+                                    </div>
+                                                            </div>
+                                <div class="comments-list">
+                                    <ul class="m-tab-trigger">
+            <li class="first on" rev="0"><a href="javascript:;">全部<em>(1)</em></a></li>
+            <li rev="1"><a href="javascript:;">好评<em>(1)</em></a></li>
+            <li rev="2"><a href="javascript:;">中评<em>(0)</em></a></li>
+            <li rev="3" class="last"><a href="javascript:;">差评<em>(0)</em></a></li>
+        </ul>                            <div class="ratelist-content">
+                                        
+        <div id="ECS_COMMENT"> <ul>
+                <li class="ratelist-item">
+                <div class="user-info-block">
+                    <div class="avatar-wrapper">
+                                        <!-- <img src="themes/ecmoban_dsc/images/touxiang.jpg" width="85" height="85"> -->
+                                    </div>
+                    <p class="name-wrapper">1***3</p>
+                </div>
+                <div class="review-content-wrapper">
+                    <div class="info">
+                        <div class="rate-status">
+                            <span class="common-rating"><span class="rate-stars" style="width:100%"></span></span>
+                        </div>
+                    </div>
+                    <div class="normal-view">
+                        <div class="comment-content">
+                            <p class="content">
+                                好吃<b class="hqrate-badge">2020-10-27 09:08:48</b>
+                            </p>
+                            <dl>
+                                <dd class="p-bfc">
+                                                            </dd>
+                            </dl>
+                        </div>
+                                                         
+                                        
+                        <div class="comment-content comment-reply95533" id="reply_comment_ECS_COMMENT95533">
+                                                                </div>
+        
+                        <div class="comment-content comment-operate">
+                            <span class="reply"><i class="icon"></i>(<font class="reply-count95533">0</font>)</span>
+                            <span class="nice comment_nice " data-commentid="95533" data-idvalue="34683"><i class="icon"></i>(<font class="reply-nice95533">0</font>)</span>
+                        </div>
+                        <div class="comment-content reply-textarea hide" id="reply-textarea95533">
+                            <div class="reply-arrow"><b class="layer"></b></div>
+                            <div class="inner">
+                                <textarea class="reply-input" name="reply_content95533" id="reply_content95533" placeholder="1***3："></textarea>
+                            </div>
+                            <div class="btnbox">
+                                <span id="reply-error95533"></span>
+                                <input name="comment_goods95533" id="comment_goods95533" type="hidden" value="34683">
+                                <input name="comment_user95533" id="comment_user95533" type="hidden" value="7898">
+                                <button type="button" class="reply-submit" value="95533">提交</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="ratelist-history">
+                <span class="history-title">
+                        口味：奶香味 <br>            </span>
+                <span class="history-add-time">2020-10-22 03:43:31&nbsp;购买</span>
+            </div>
+            </li>
+            </ul>
         </div>
-       </div>
     </div>
     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
     <!-- 底部 -->
-    <div id="footer" style="padding:540px 0 0 0;">
+    <div id="footer">
         <div class="global-footer-lazy">
             <div class="ecsc-service-flow">
                 <div class="ecsc-service-item">
@@ -600,7 +798,7 @@
                 <br style="color: #686868;">
                 <p style="color: #686868;">Copyright ©&nbsp;&nbsp; 2015-2020&nbsp;&nbsp; ，华商创展（中国）有限公司版权所有</p>
 
-                <br> 
+                <br>
                 <!-- <p>
                 共执行 190 个查询，用时 0.689527 秒，在线 945 人，Gzip 已禁用，占用内存 16.525 MB
                 <img src="" alt="">
@@ -609,6 +807,9 @@
         </div>
 
     </div>
+
+
+
 </body>
 
 </html>

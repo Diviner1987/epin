@@ -10,7 +10,7 @@ router.route('/getProducts')
         //SQL语句查询
         conn.query(sql, (err, result) => {
             if (err) console.log(err);
-            res.eval(result); //响应数据结果---undefined
+            res.json(result); //响应数据结果---undefined
         });
     });
 

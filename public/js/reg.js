@@ -2,7 +2,7 @@ import './library/jquery.js';
 import './library/jquery.md5.js';
 import cookie from './library/cookie.js';
 
-$('#submit').on('click', function() {
+$('#registsubmit').on('click', function() {
     let password = $.md5($('[name=password]').val());
     $.ajax({
         type: "post",

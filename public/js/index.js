@@ -17,17 +17,21 @@ $.ajax({
         // 获得数据后进行字符串拼接
         let tempLi = '';
         res.forEach((elm, i) => {
+
             let picture = JSON.parse(elm.picture); //收到数据转换成JSON对象
             // console.log(picture);
+            console.log(picture[0].src);
             tempLi += `
                 <li>                            
                     <a href="../html/detail.html?id=${elm.id}">
-                    <img data-original="../img/${elm.picture[0].src}" class="lazy"/>
+                    <img data-original="../img/${elm.picture[0].src}" alt="${elm.picture[0].alt}" class="lazy">
                     <p>${elm.title}</p>
                     <span>¥${elm.price}</span>
                     </a>
                 </li>
                 `;
+
+
         });
         //移入之后出现透明度的效果
         $('.p-list').append(tempLi);
