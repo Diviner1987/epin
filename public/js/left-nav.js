@@ -1,3 +1,4 @@
+//左边的导航栏
 $(function() {
     //左边的导航栏根据滚轴的滚动来触发事件
     $(window).on('scroll', (function() {
@@ -5,11 +6,11 @@ $(function() {
         let top = $(".elevator").offset().top;
         if (scrollTop > top) {
             $(".elevator").css({
-                'top': '0'
+                display: 'block'
             })
         } else {
             $("#elevator").css({
-                'top': '-100'
+                display: 'none'
             })
         }
     }));

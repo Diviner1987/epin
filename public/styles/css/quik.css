@@ -135,12 +135,12 @@
 }
 
 .quick_toggle .mp_qrcode {
-    background: url("images/menu_qr.png") no-repeat;
+    /* background: url("images/menu_qr.png") no-repeat; */
     width: 114px;
     height: 204px;
     position: absolute;
     left: -114px;
-    top: -140px;
+    top: -166px;
 }
 
 .quick_links_allow_gotop .returnTop {

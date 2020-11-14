@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/css/datasopc.css">
     <link rel="stylesheet" href="./styles/css/quik.css">
     <link rel="stylesheet" href="./styles/css/lunbo-tz.css">
+    <link rel="stylesheet" href="./styles/css/show-erwei.css">
 </head>
 
 <body>
@@ -433,7 +434,7 @@
                             </div>
                         </div>
                     </div>
-                </ul>
+               </ul>
             </div>
             <!-- 空div -->
             <div class="shopping-pol">
@@ -449,8 +450,8 @@
                                 </div> -->
                             </li>
                                 </ul></div>
-                        <a href="javascript:void(0);" class="prev prevStop"></a>
-                        <a href="javascript:void(0);" class="next nextStop"></a>
+                        <a href="javascript:;" class="prev prevStop"></a>
+                        <a href="javascript:;" class="next nextStop"></a>
                         <!-- <i class="picon"></i> -->
                     </div>
                 </div>
@@ -477,6 +478,8 @@
                         <li>洋酒<i style="width: 30px;"></i></li>
                     </ul>
                 </div>
+
+                <!--右边的渲染部分 -->
                 <div class="floor-content">
                     <div class="floor-left">
                         <div class="floor-left-banner">
@@ -632,6 +635,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 楼层下面的部分 -->
                 <div class="floor-new">
                     <ul>
                         <li >
@@ -1147,19 +1151,17 @@
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="menu_jt"><i class="qr_code"></i></a>
-                                <div class="mp_qrcode" style="display: none;">
+                                <!-- 二维码图片 -->
+                                <div class="mp_qrcode" style="display: block;">
                                     <img style="position: absolute; top: 56px;left: 7px;z-index: 1000000;" src="./img/app_qr.png" alt="二维码" width="100px" height="100px">
                                     <img style="position: absolute; top:0px;left: 0px;z-index: 100;display: block;" src="./img/menu_qr.png" width="114px" height="204px">
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <!-- <img src="./img/menu_qr.png" alt=""> -->
-
-                    </div>
+                   
                 </div>
-                <!-- <div id="quick_links_pop" class="quick_links_pop"></div> -->
+                
             </div>
         </div>
     </div>
@@ -1307,8 +1309,8 @@
     </div>
 
     <!-- 浮动的导航栏，有一个单独的效果 -->
-    <div class="attached-search-container show" style="margin-left:0px;top: -60px;">
-    <div class="attached_bg"></div>
+    <div class="attached-search-container show" style="margin-left:0px;top: -60px;background: white;">
+    <!-- <div class="attached_bg"></div> -->
     <div class="w1200" style="margin-left: 410px;">
         <div class="fp-iconfont"><img src="./img/logo.gif" height="58"></div>
         <div style="z-index: -10000;float: left;">
@@ -1331,8 +1333,10 @@
 
     
     </div>
+
+
     <!-- 左边的导航栏 -->
-    <div id="elevator" class="elevator" style="position: fixed; top: 1.5px; left: 133.5px; opacity: 1;display: none;">
+    <div id="elevator" class="elevator" style="position: fixed; top: 1.5px; left: 133.5px; opacity: 1;">
         <ul>
             <li class="handler_floor1"><i class="icon"></i></li>
             <li class="handler_floor2"><i class="icon"></i></li>
