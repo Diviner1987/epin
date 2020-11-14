@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.banner {
+    width: 730px;
+    height: 414px;
+    position: relative;
+    /* border: 1px solid orange; */
+    margin: 0px auto;
+}
+
+.banner ul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
+.slider ol {
+    position: absolute;
+    height: 20px;
+    top: 396px;
+    right: 487px;
+}
+
+.slider ol li {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 16px;
+    height: 16px;
+    text-indent: -99999px;
+    margin-right: 8px;
+    background: url(../../img/ecsc_icon.png) -105px -10px no-repeat;
+    cursor: pointer;
+}
+
+.slider ol li.active {
+    background-position: -105px -35px;
+}
+
+#right,
+#left {
+    font-size: 100px;
+    color: #fff;
+    font-family: verdana;
+    position: absolute;
+    text-decoration: none;
+    top: 110px;
+    display: none;
+}
+
+#left {
+    left: 20px;
+}
+
+#right {
+    right: 20px;
+}
+
+#right:hover,
+#left:hover {
+    color: #000;
+}

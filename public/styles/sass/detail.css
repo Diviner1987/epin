@@ -1,0 +1,328 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ecsc-breadcrumb {
+  padding: 20px 0;
+  line-height: 24px;
+}
+
+.ecsc-breadcrumb h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #666;
+  float: left;
+  font-family: "microsoft yahei";
+}
+
+.ecsc-breadcrumb .arrow {
+  font-family: 宋体;
+  line-height: 24px;
+  color: #aaaaaa;
+  margin: 0px 6px;
+}
+
+.ecsc-breadcrumb .breadcrumb-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 100;
+  overflow: visible;
+}
+
+.ecsc-breadcrumb span {
+  float: left;
+  font-size: 12px;
+  color: #666;
+  display: inline-block;
+  width: auto;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ecsc-breadcrumb .filter-tag {
+  border: 1px solid #dcdcdc;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 25px 0 10px;
+  overflow: visible;
+}
+
+.ecsc-breadcrumb .filter-tag a {
+  text-decoration: none;
+  color: #666;
+}
+
+.w1200 {
+  width: 1200px !important;
+  margin: 0 auto;
+}
+
+.infor-1 {
+  width: 405px;
+}
+
+.infor-1 > div:nth-child(1) {
+  width: 405px;
+}
+
+.infor-1 > div:nth-child(1) img {
+  width: 405px;
+  height: 405px;
+}
+
+.infor-1 > div:nth-child(2) {
+  width: 405px;
+}
+
+.infor-1 > div:nth-child(2) .list {
+  width: 405px;
+  height: 70px;
+  background: #EEE;
+  list-style: none;
+  padding-top: 5px;
+}
+
+.infor-1 > div:nth-child(2) .list li {
+  float: left;
+  padding: 0 10px;
+}
+
+.infor-1 > div:nth-child(2) .list li img {
+  width: 60px;
+  height: 60px;
+}
+
+.infor-1 > div:nth-child(2) a:nth-child(1) {
+  text-decoration: none;
+  color: #666;
+  display: block;
+  position: absolute;
+  top: 687px;
+}
+
+.infor-1 > div:nth-child(2) a:nth-child(2) {
+  text-decoration: none;
+  color: #666;
+  display: block;
+  position: absolute;
+  top: 687px;
+  left: 636px;
+}
+
+.infor-2 {
+  width: 555px;
+  float: left;
+  margin-left: 405px;
+  margin-top: -454px;
+}
+
+.infor-2 .done-title {
+  margin-left: 30px;
+  margin-top: -20px;
+}
+
+.infor-2 .done-title > h1 {
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+}
+
+.infor-2 .done-price {
+  margin-bottom: 5px;
+  float: left;
+  position: relative;
+  background: #f7f7f7;
+  padding-bottom: 5px;
+  margin-left: 30px;
+  width: 510px;
+  height: 50px;
+}
+
+.infor-2 .done-price span:nth-child(1) {
+  float: left;
+  width: 75px;
+  margin-left: -75px;
+  display: inline;
+  text-align: right;
+  font-family: '\5B8B\4F53';
+  position: absolute;
+  left: 74px;
+  top: 15px;
+}
+
+.infor-2 .done-price span:nth-child(2) {
+  color: #e4393c;
+  font-size: 20px;
+  margin-right: 2px;
+  margin-left: 80px;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.infor-2 .done-price span:nth-child(3) {
+  color: #e4393c;
+  font-size: 20px;
+  margin-right: 2px;
+  margin-left: 0px;
+}
+
+.infor-2 .done-price span:nth-child(4) {
+  color: #666;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.infor-2 .done-price span:nth-child(4) a {
+  text-decoration: none;
+  color: #666;
+}
+
+.infor-2 .done-price span:nth-child(4) a:hover {
+  color: #e23435;
+  cursor: pointer;
+}
+
+.infor-2 .done-num {
+  margin: 5px 0 0 10px;
+  float: left;
+  position: absolute;
+  top: 444px;
+  left: 828px;
+  font-size: 12px;
+}
+
+.infor-2 .done-addnum {
+  height: auto;
+  line-height: normal;
+  position: relative;
+}
+
+.infor-2 .done-addnum span {
+  display: inline-block;
+  margin-left: 32px;
+  margin-top: 130px;
+}
+
+.infor-2 .done-addnum a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+  white-space: nowrap;
+}
+
+.infor-2 .done-addnum .btn-reduce {
+  width: 25px;
+  height: 21px;
+  background: url(../../img/ecsc_icon.png) no-repeat;
+  text-indent: -99999px;
+  float: left;
+  border: 1px solid #dcdcdc;
+  background-position: -170px -223px;
+  position: absolute;
+  left: 138px;
+  top: 51px;
+  margin-top: 135px;
+}
+
+.infor-2 .done-addnum .btn-add {
+  width: 25px;
+  height: 21px;
+  background: url(../../img/ecsc_icon.png) no-repeat;
+  text-indent: -99999px;
+  float: left;
+  border: 1px solid #dcdcdc;
+  background-position: -140px -223px;
+  position: absolute;
+  top: 186px;
+  left: 85px;
+}
+
+.infor-2 .done-addnum .buy-num {
+  width: 28px;
+  height: 21px;
+  border: 0;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  float: left;
+  text-align: center;
+  outline: 0;
+  font-size: 14px;
+  position: absolute;
+  top: 186px;
+  left: 110px;
+}
+
+.infor-2 .addcar {
+  width: 524px;
+  padding: 10px 0 8px 3px;
+  border-bottom: none;
+  float: left;
+  font-family: "microsoft yahei";
+  margin-top: 94px;
+  margin-left: 25px;
+  position: relative;
+}
+
+.infor-2 .addcar a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+  white-space: nowrap;
+}
+
+.infor-2 .addcar .buynow {
+  color: #ec5051;
+  width: auto;
+  font-size: 16px;
+  padding: 0 17px;
+  height: 38px;
+  line-height: 34px;
+  border: 1px solid #d1c0a5;
+  background: #f9e5c8;
+  float: left;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+  filter: chroma(color=#333000);
+  outline: 0;
+}
+
+.infor-2 .addcar .btn-append {
+  color: #fff;
+  font-size: 16px;
+  padding: 0 18px 0 42px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background: #eb4f50;
+  float: left;
+  position: relative;
+  margin-right: 15px;
+}
+
+.infor-2 .addcar .btn-append i {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.infor-2 .addcar .btn-append .icon {
+  background: url(../../img/ecsc_icon.png) no-repeat;
+  background-position: -6px -8px;
+}
+
+.infor-3 {
+  width: 212px;
+  float: left;
+  margin-left: 960px;
+  margin-top: -485px;
+}

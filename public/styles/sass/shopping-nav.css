@@ -20,7 +20,8 @@
   justify-content: space-around;
   align-items: center;
   background: #e23435;
-  margin-top: -198px;
+  position: absolute;
+  top: -200px;
 }
 
 #shopping > div:nth-of-type(1) .ver-nav a {
@@ -38,6 +39,7 @@
   justify-content: center;
   align-items: center;
   background: #4a3434;
+  opacity: 1;
 }
 
 #shopping > div:nth-of-type(1) .ver-block ul {
@@ -48,6 +50,10 @@
 
 #shopping > div:nth-of-type(1) .ver-block ul > li {
   list-style: none;
+}
+
+#shopping > div:nth-of-type(1) .ver-block ul > li:hover {
+  opacity: 0.7;
 }
 
 #shopping > div:nth-of-type(1) .ver-block ul > li a {

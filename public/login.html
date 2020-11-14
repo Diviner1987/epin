@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页</title>
+    <link rel="stylesheet" href="./styles/sass/login.scss">
+    <link rel="stylesheet" href="./styles/css/base.css">
+    <link rel="stylesheet" href="./styles/css/style-d3.css">
+    <link rel="stylesheet" href="./styles/sass/index.css">
+</head>
+
+<body>
+    <!-- 顶部logo -->
+    <div class="registLogin" style="margin-top: 70px;">
+        <div class="registLogin-header w1200">
+            <a href="./index.php" class="logo"><img src="./img/logo.gif"></a>
+            <!-- <b></b> -->
+        </div>
+    </div>
+    <!-- 登录部分 -->
+    <div class="registLogin-layout" style="overflow:visible;">
+        <div class="registLogin-banner">
+            <!-- 背景图片 -->
+            <div class="bd">
+                <ul>
+                    <li style="background:#ffffff;">
+                        <div class="banner-width" style="background:url(http://images.epin.com/data/afficheimg/1502994453145866934.jpg) no-repeat;">
+                            <a href="" target="blank" style=" width: 100%;height: 500px;"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 背景上面的登录框 -->
+            <div class="hd">
+                <a href="javascript:void(0);" class="icon buy-prev" style="display: none;"></a>
+                <a href="javascript:void(0);" class="icon buy-next" style="display: none;"></a>
+                <div class="login-wrap">
+                    <div class="login-form">
+                        <form name="formLogin" action="user.php" method="post" onsubmit="userLogin();return false;">
+                            <div class="mt">
+                                <h1>欢迎登录</h1>
+                                <a href="reg.html" class="jump">免费注册</a>
+                            </div>
+                            <div class="mc">
+                                <div class="msg-wrap">
+                                    <div class="msg-error" style="display:none">
+                                        <b></b>账户名与密码不匹配，请重新输入
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <div class="item last">
+                                        <div class="item-info">
+                                            <i class="i-name"></i>
+                                            <input type="text" id="loginname" name="username" class="text text-2 " value="" placeholder="用户名/邮箱/手机">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-info">
+                                            <input type="password" id="nloginpwd" name="password" class="text text-2 " value="" placeholder="密码">
+                                            <i class="i-pass"></i>
+                                        </div>
+                                    </div>
+                                    <div class="safe">
+                                        <span>
+                                        <input id="remember" name="remember" type="checkbox" class="jdcheckbox" style="outline: rgb(109, 109, 109) none 0px;">
+                                        <label for="remember">请保存我这次的登录信息。</label>
+                                    </span>
+                                    </div>
+                                    <div class="item">
+                                        <span class="forget-pw-safe"><a href="user.php?act=get_password">忘记密码?</a></span>
+                                        <input type="hidden" name="act" value="act_login">
+                                        <input type="hidden" name="back_act" value="http%3A%2F%2Fwww.epin.com%2F">
+                                        <div class="login-btn"><input type="submit" name="submit" id="loginSubmit" value="登&nbsp;&nbsp;录" class="btn-entry"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="qrcode-login">
+                        <div class="mc">
+                            <div class="qrcode-desc">
+                                <h2>用京东APP <span class="ml5">扫码安全登录</span></h2>
+                            </div>
+                            <div class="qrcode-error">
+                                <b></b>
+                                <h6>登录失败</h6>
+                                请刷新二维码后重新扫描
+                            </div>
+                            <div class="qrcode-main">
+                                <div class="qrcode-img"><img src="themes/ecmoban_dsc/images/wap_ewm.jpg" width="150" height="150"></div>
+                                <div class="qrcode-panel">
+                                    <ul>
+                                        <li class="first"><a href="javascript:;">刷新二维码</a></li>
+                                        <li><a href="#">使用帮助</a></li>
+                                    </ul>
+                                    <div class="qrcode-tips">
+                                        <span>扫描不上，版本过低？</span>
+                                        <div class="triangle-border tb-border"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hide">
+                        <a href="javascript:;" class="qrcode-target btn-2qrcode">扫码登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div id="footer">
+        <div class="global-footer-lazy">
+            <div class="ecsc-service-flow">
+                <div class="ecsc-service-item">
+                    <i class="ecsc-zp"></i>
+                    <span>正品保障</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-qt"></i>
+                    <span>七天包退</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-hp"></i>
+                    <span>好评如潮</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-sd"></i>
+                    <span>闪电发货</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-ry"></i>
+                    <span>权威荣誉</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-desc">
+            <div class="footer-desc-list">
+                <!-- 1 -->
+                <dl>
+                    <dt>新手帮助</dt>
+                    <dd>
+                        <a href="">交易条款协议</a>
+                    </dd>
+                    <dd>
+                        <a href="">注册新用户</a>
+                    </dd>
+                    <dd>
+                        <a href="">找回密码</a>
+                    </dd>
+                    <dd>
+                        <a href="">联系我们</a>
+                    </dd>
+                </dl>
+                <!-- 2 -->
+                <dl>
+
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="">订购流程</a>
+                    </dd>
+                    <dd>
+                        <a href="">验货与签收</a>
+                    </dd>
+                    <dd>
+                        <a href="">订单配送及查询</a>
+                    </dd>
+                </dl>
+                <!-- 3 -->
+                <dl>
+                    <dt>支付及配送</dt>
+                    <dd>
+                        <a href="">支付方式</a>
+                    </dd>
+                    <dd>
+                        <a href="">配送方式</a>
+                    </dd>
+                    <dd>
+                        <a href="">配送时间及运费</a>
+                    </dd>
+                </dl>
+                <!-- 4 -->
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="">最新七天无理由退换货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="">退款说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">发票说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">退款流程</a>
+                    </dd>
+                </dl>
+                <!-- 5 -->
+                <dl class="contact-us">
+                    <dt>宜品客服</dt>
+                    <dd>
+                        <a href="">在线咨询</a>
+                    </dd>
+                    <dd>
+                        <a href="">关于宜品</a>
+                    </dd>
+                    <dd>
+                        <a href="">常见问题</a>
+                    </dd>
+                </dl>
+                <!-- 6 -->
+                <dl class="QR_code">
+                    <div class="QR_code_wx">
+                        <img src="./img/footad-bg.png" alt="" style="width: 78px;height: 78px;margin-top: -123px;margin-left: 208px;">
+                        <p>宜品官方微信</p>
+                    </div>
+                    <div class="QR_code_app">
+                        <img src="./img/app_qr.png" alt="" style="width: 78px;height: 78px;margin-top: -123px;margin-left: 233px;">
+                        <p>宜品手机APP</p>
+                    </div>
+                </dl>
+            </div>
+            <div class="num_email" style="background: #e4e4e4;">
+                <span class="tel_num">
+                服务热线：400-160-2566    9:00-21:00
+            </span> &nbsp;&nbsp;
+                <span class="email">kefu@epin.com</span>
+            </div>
+            <!-- 最后一块 -->
+            <div class="footer-desc-copyright" style="margin-top: 65px;">
+                <p class="footer-ecscinfo">
+                    <a href="" style="color: #686868;">首页</a> |
+                    <a href="" style="color: #686868;">联系我们</a>
+                </p>
+                <b style="color: #686868;">
+                ICP备案证书号:
+                <a href="" style="color: #686868;text-decoration: none;">豫ICP备16023223号</a>
+                </b>
+
+                <!-- <p>
+                共执行 190 个查询，用时 0.689527 秒，在线 945 人，Gzip 已禁用，占用内存 16.525 MB
+                <img src="" alt="">
+               </p> -->
+            </div>
+            <!-- 信用图标 -->
+            <div style="margin-top: 45px;">
+                <a href="" style="margin-top: 100px;">
+                    <img src="http://c.trustutn.org/images/cert/cert_0_2.png" alt="">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

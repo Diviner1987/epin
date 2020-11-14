@@ -6,7 +6,7 @@ const pool = mysql.createPool({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'data_2009'
+    database: 'epin'
 });
 //3.导出数据库连接池模块
 module.exports = pool;

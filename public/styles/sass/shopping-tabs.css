@@ -13,7 +13,7 @@
   display: flex;
   position: absolute;
   top: 20px;
-  left: 0;
+  left: 6px;
 }
 
 .shopping-tabs .sp-tabs > div:nth-of-type(1) {
@@ -93,7 +93,7 @@
   background: #bcbddc;
   position: absolute;
   top: 635px;
-  left: 730px;
+  left: 735px;
 }
 
 .raise-img {

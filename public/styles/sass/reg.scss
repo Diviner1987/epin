@@ -1,0 +1,104 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    left: 0;
+}
+
+//头部
+//logo和图片
+.registLogin {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    z-index: 999;
+}
+
+// 头部的下边框
+.borderBottom1 {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+// 已有账号注册
+.registLogin-header {
+    position: relative;
+    overflow: hidden;
+    margin-left: 100px;
+    .registLogin-header-fr {
+        position: absolute;
+        right: 0;
+        bottom: 12px;
+        margin-left: 1108px;
+        color: #696969;
+        a {
+            text-decoration: none;
+        }
+        span {
+            font-size: 12px;
+        }
+        .jump {
+            color: #3894ea;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// logo图标
+.w1200 {
+    width: 1200px !important;
+    margin: 0 auto;
+    // logo图标
+    .logo {
+        display: block;
+        width: 220px;
+        height: 70px;
+        float: left;
+    }
+    a {
+        text-decoration: none;
+        color: #666;
+    }
+}
+
+// 注册部分
+.registLogin-layout {
+    height: auto;
+    position: relative;
+}
+
+.w1081 {
+    width: 1081px !important;
+    margin: 0 auto;
+}
+
+.regist-banner {
+    padding: 0px;
+    float: left;
+    a {
+        text-decoration: none;
+        color: #666;
+        img {
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}
+
+.regist-wrap {
+    width: 398px;
+    margin: -1px 2px;
+    position: relative;
+    z-index: 99;
+    .regist-form {
+        padding: 25px 40px 0;
+        .mc {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

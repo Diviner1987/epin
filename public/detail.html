@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/sass/index.css">
+
+    <!-- 入口文件 -->
+    <script src="./js/detail.js" type="module"></script>
+    <link rel="stylesheet" href="./styles/css/style-d3.css">
+    <!-- <link rel="stylesheet" href="./styles/css/style.css"> -->
+    <link rel="stylesheet" href="./styles/css/base.css">
+    <!-- <link rel="stylesheet" href="./styles/css/glass.css"> -->
+
+</head>
+
+<body>
+    <div id="nav-container" style="background: #efefef;">
+        <!-- 导航栏 -->
+        <div class="site-nav">
+            <!-- 送货至 -->
+            <div>
+                <!-- 送货 -->
+                <div class="ash sh">
+                    <ul>
+                        <li>送货至:</li>
+                        <li>
+                            郑州
+                            <span>^</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 登录注册 -->
+                <div class="ash  dz">
+                    <a href="javascript:;">请登录</a>
+                    <a href="javascript:;">注册</a>
+                </div>
+            </div>
+
+            <!-- 我的订单 -->
+            <div>
+                <!-- 订单，客服 -->
+                <ul>
+                    <li>
+                        <a href="javascript:;">我的订单</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;" style="color:#c72a31">
+                            <b>会员卡充值</b>
+                        </a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">我的收藏</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">在线客服</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">网站导航</a>
+                        <span class="slide">^</span>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a href="javascript:;">手机宜品</a>
+                        <span class="slide">^</span>
+                    </li>
+                </ul>
+
+                <!-- 购物车 -->
+
+                <ul>
+                    <li>
+                        <img src="./img/shopcart_2015.png" alt="">
+                    </li>
+                    <li>
+                        <a href="javascrpit:;">购物车</a>
+                        <span>&gt;</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- logo.搜索框 -->
+        <div id="logo-search">
+            <!-- logo -->
+            <div>
+                <img src="./img/logo.gif" alt="">
+            </div>
+            <!-- 搜索框 -->
+            <div>
+                <div class="row">
+                    <!-- /.col-lg-6 -->
+                    <div class="col-lg-12 ser">
+                        <div class="input-group sou">
+                            <input type="text" class="form-control" placeholder="商品">
+
+                            <div class="input-group-btn an">
+                                <button type="button" class="btn btn-default " style="outline-style: none;background-color: #ec5151;color: #fff;">搜索 
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!-- /.col-lg-6 -->
+        </div>
+        <div class=" key">
+                    <ul>
+                        <li>
+                            <a href="">美的</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">博洋</a>
+                              <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">清扬</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">隆力奇</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">舒克</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="">贝亲</a>
+                            <span>|</span>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+            <!-- /.row -->
+        <!-- 电话联系 -->
+        <div>
+            <img src="" alt="">
+        </div>
+        </div> 
+        <!-- 商品的导航栏 -->
+       <div id="shopping">
+        <!--商品导航栏  -->
+        <div>
+            <div >
+                <!-- 全部商品上面的导航栏 -->
+                <div class="ver-nav" style="margin-top: 328px;">
+                    <a href="javascript:;">全部商品分类</a>
+                </div>
+                <!-- 垂直的导航栏 -->
+                <div class="ver-block" style="opacity: 0;">
+                    <!-- 显示的垂直导航栏 -->
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="javascript:;" title="美妆、护理、个人清洁">美妆、护理、个人清洁</a>
+                                <b>></b>
+                            </li>
+
+                            <li>
+                                <a href="javascript:;" title="美食、粮油、特产、饮品">美食、粮油、特产、饮品</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="电器、数码、医疗器械">电器、数码、医疗器械</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="白酒、红酒、高端藏酒">白酒、红酒、高端藏酒</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="家居、家具、厨具、家纺">家居、家具、厨具、家纺</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="家庭、衣物清洁、宠物">家庭、衣物清洁、宠物</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="办公电脑、文具、耗材">办公电脑、文具、耗材</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="箱包、体育健身、户外">箱包、体育健身、户外</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="图书、音像、电子书">图书、音像、电子书</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="珠宝首饰、手表、眼镜">珠宝首饰、手表、眼镜</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="汽车装饰、保养、车用配件">汽车装饰、保养、车用配件</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="母婴、童装玩具、乐器">母婴、童装玩具、乐器</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;" title="男/女装、男/女鞋、帽子">男/女装、男/女鞋、帽子</a>
+                                <b>></b>
+                            </li>
+                            <li>
+                                <a href="javascript:;"title="宜品卡、生活服务">宜品卡、生活服务</a>
+                                <b>></b>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <!-- 隐藏的垂直导航栏 --tab切换-->
+                </div>
+            </div>
+            <!-- 水平导航栏 -->
+            <div class="al-nav" style="width: 1200px;">
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="active">首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">夏末初秋</a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:;">宜品自营</a>
+                        
+                    </li>
+                    <li>
+                        <a href="javascript:;">宜品卡</a>
+                    </li>
+                </ul>
+                <!-- 到时候写jshover的时候给当前元素加上下划线，让下划线向左移动多少 -->
+                 <div style="width: 72px; left: 20px;" class="sh-line">
+                <span style="left:15px;" ></span>
+                </div>
+                <!-- tab切换 -->
+                <div style="display: none;">
+                    <div class="tabs">
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- 详情页面 -->
+        <div class="ecsc-breadcrumb w1200" style="float: left;margin-left: -1420px;margin-top: 55px;">
+            <h1>美食、粮油、特产、饮品</h1>
+            <span class="arrow" style="margin-top: 0px;">></span>
+            <span class="breadcrumb-item ziji" style="margin-top: 0px;">
+                <span class="filter-tag">
+                    <a href="">坚果炒货</a>
+                </span>
+                <span class="arrow">></span>
+            </span>
+        </div>
+       </div>
+    <!-- 详情页图片 -->
+       <div style="width: 1200px;margin: -710px auto;"  class="product-info">
+        <!-- 详情页左边第一部分 -->
+         <div class="infor-1">
+           
+            <!-- <div style="cursor: pointer;">
+                <a href="" >
+                    <img src="./img/1-1.jpg" alt="">
+                </a>
+            </div> -->
+            <div class="smallbox">
+                <a>
+                    <span class="img-wrap">
+                        <img src="./img/1-1.jpg" alt="" class="smallpic">
+                        <div class="movebox"></div>
+                    </span>
+                </a>
+                <!-- <div class="bigbox">
+                <img src="./img/1-1.jpg" alt="" class="bigpic">
+                </div>  -->
+            </div>
+           
+            <div>
+                <a class="bx-prev" style=" cursor: pointer;">&lt;</a>
+                <a class="bx-next" style=" cursor: pointer;">&gt;</a>
+                <ul class="list">
+                    <li>
+                        <img src="./img/1-1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/1-2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/1-3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/1-4.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/1-5.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+           
+           
+        <!-- 详情页中间部分 -->
+        <div class="infor-2">
+            <div class="done-title">
+                <h1>休闲零食500g坚果巴旦木奶香味</h1> 
+            </div>
+            <div class="done-price" >
+                <span>商城价:</span> 
+                <span>¥</span>
+                <span>196.00</span>
+                <span>
+                    <a href="javascript">(降价通知)</a>
+                </span>
+            </div>
+            <div class="done-num">
+                <span>库存：935</span>  
+            </div>
+            <div class="done-addnum">
+                <span >数量:</span> 
+                <a href="javascript:;" class="btn-reduce" >+</a>
+                <input type="text" class="text buy-num" id="quantity" onblur="changePrice()" value="1" name="number" defaultnumber="1">
+                <a href="javascript:;"class="btn-add">-</a>
+            </div>
+            <div class="addcar">
+                     <a href="javascript:;" class="buynow btn-buynow">立即购买</a>
+                    <a href="shpcar.html" class="btn-append">
+                    <i class="icon"></i>
+                    加入购物车
+                </a>
+            </div>
+        </div> 
+        
+        <!-- 详情页右边部分 -->
+        <div class="infor-3">
+            <div class="seller-pop">
+                <div class="seller-logo">
+                                    <a href="brand.php?id=5268&amp;mbid=1047" target="_blank">健康美食</a>
+                                </div>
+                <div class="seller-infor" style="display:none;"><a href="brand.php?id=5268&amp;mbid=1047" title="新郑健康好枣" target="_blank" class="name">新郑健康好枣</a><i class="icon arrow-show-more"></i></div>
+                        <div class="seller-kefu">
+                                 <a id="ykf" onclick="qimoChatClick()" href="javascript:;" goods_id="34683" class="seller-btn" ><i class="icon"></i><span style="margin-left: -15px;">在线客服</span> </a>
+                        </div>
+            </div>
+        </div>
+
+        <!-- 详情页底下详情部分 -->
+        <div class="ecsc-goods-layout">
+            <div class="ecsc-layout-210">               
+                    <div class="m goods_related_cat">
+                    <div class="mt"><h2>相关分类</h2></div>
+                    <div class="mc">
+                        <ul class="lh">
+                        <li><a href="category.php?id=721" target="_blank">核桃</a></li>
+                        <li><a href="category.php?id=722" target="_blank">夏威夷果</a></li>
+                        <li><a href="category.php?id=723" target="_blank">碧根果</a></li>
+                        <li><a href="category.php?id=724" target="_blank">开心果</a></li>
+                        <li><a href="category.php?id=725" target="_blank">腰果/松子</a></li>
+                        <li><a href="category.php?id=726" target="_blank">花生/板栗</a></li>
+                        <li><a href="category.php?id=727" target="_blank">杏仁</a></li>
+                        <li><a href="category.php?id=728" target="_blank">瓜子</a></li>
+                        <li><a href="category.php?id=729" target="_blank">豆类</a></li>
+                        <li><a href="category.php?id=1607" target="_blank">巴达木</a></li>
+                        <li><a href="category.php?id=1608" target="_blank">坚果礼盒</a></li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="m goods_brand">
+                    <div class="mt"><h2>同类其他品牌</h2></div>
+                    <div class="mc">
+                        <ul class="lh">
+                        <li><a href="brand.php?id=3695" target="_blank">摇篮果</a></li>
+                        <li><a href="brand.php?id=4667" target="_blank">诚可成</a></li>
+                        <li><a href="brand.php?id=5074" target="_blank">波波猴</a></li>
+                        <li><a href="brand.php?id=5226" target="_blank">轻伴</a></li>
+                        <li><a href="brand.php?id=5248" target="_blank">美食匠坊</a></li>
+                        <li><a href="brand.php?id=5268" target="_blank">健康美食</a></li>
+                        </ul>
+                    </div>
+                </div>
+                            
+                <div id="charts" class="m">
+                    <div class="mt"><h2>最新排行榜</h2></div>
+                    <div class="mc">
+                        <ul class="charts-tab">
+                            <li class="first on">新品<i></i></li>
+                            <li>推荐<i></i></li>
+                            <li class="last">热销<i></i></li>
+                        </ul>
+                        <div class="charts-list">
+                    </div>
+                </div>
+    </div>
+
+
+    <div class="history" id="history" style="display: block;">
+        <div class="mt">
+            <h2>最近浏览</h2>
+            <a onclick="clear_history()" class="clear_history ftx-05" href="javascript:void(0);">清空</a>
+        </div>
+        <div class="mc" id="history_list">
+            <ul>
+                <li>
+                    <div class="item">
+                        <div class="p-img"><a href="goods.php?id=34683" target="_blank"><img src="https://cbu01.alicdn.com/img/ibank/2020/201/349/22117943102_1336326719.jpg_300x300.jpg" width="72" height="72" class="lazy" data-original="https://cbu01.alicdn.com/img/ibank/2020/201/349/22117943102_1336326719.jpg_300x300.jpg" style="display: inline-block;"></a></div>
+                        <div style="width:90px; float:left;">
+                            <div class="p-name"><a href="goods.php?id=34683" target="_blank">休闲零食500g坚果巴旦木奶香味</a></div>
+                            <div class="p-price">¥196.00</div>
+                            <div class="p-num">售出：<strong> 0</strong>笔</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>    
+    </div>
+</div>
+<div class="ecsc-goods-main">
+    <!-- 商品详情 -->
+                <div class="ecsc-single-desc desc">
+                    <div class="goods-detail-title goods-detail-mt" style="top: 0px; position: absolute;">
+                        <ul class="tabs">
+                            <li class="tab_item first current">商品详情</li>
+                        </ul>
+                    </div>
+    
+                    <div class="floors">
+                        <div class="ecsc-goods-item fment">
+                            <dl class="goods-para">
+                                <dd class="column"><span>商品名称：休闲零食500g坚果巴旦木奶香味</span></dd>
+                                <dd class="column"><span>商品编号：630398483371</span></dd>
+                                <dd class="column"><span>上架时间：2020-10-20 15:36:32</span></dd>
+                            </dl>
+                            <dl class="goods-para" style="margin-top:0px;">
+                                <dt class="hide">商品属性</dt>
+                                <dd class="column"><span title="郑风源">品牌：郑风源</span></dd>
+                                <dd class="column"><span title="包装">售卖方式：包装</span></dd>
+                                <dd class="column"><span title="6952345601876">商品条形码：6952345601876</span></dd>
+                                <dd class="column"><span title="否">是否进口：否</span></dd>
+                                <dd class="column"><span title="郑州">原产地：郑州</span></dd>
+                                <dd class="column"><span title="SC11741018400368">生产许可证编号：SC11741018400368</span></dd>
+                                <dd class="column"><span title="310">保质期：310</span></dd>
+                                <dd class="column"><span title="GB19300">产品标准号：GB19300</span></dd>
+                                <dd class="column"><span title="500g">净含量（规格）：500g</span></dd>
+                                <dd class="column"><span title="SZZ-ZF0012">货号：SZZ-ZF0012</span></dd>
+                                <dd class="column"><span title="全年">热卖月份：全年</span></dd>
+                                <dd class="column"><span title="SZS00001">供应商编号：SZS00001</span></dd>
+                            </dl>
+                        <div class="goods-detail-banner">
+                        <div>
+                            <div>
+                                <p>
+                            <img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/666/912/22030219666_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/209/686/22119686902_1336326719.jpg"><br><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/387/612/22030216783_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/161/642/22030246161_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/290/317/22119713092_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/177/296/22119692771_1336326719.jpg"><br><img alt="undefined" src="https://cbu01.alicdn.com/img/ibank/2020/494/896/22119698494_1336326719.jpg"><br><br><br><br><br><br>
+                               </p>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    </div>
+    <!-- 底部 -->
+    <div id="footer" style="padding:540px 0 0 0;">
+        <div class="global-footer-lazy">
+            <div class="ecsc-service-flow">
+                <div class="ecsc-service-item">
+                    <i class="ecsc-zp"></i>
+                    <span>正品保障</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-qt"></i>
+                    <span>七天包退</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-hp"></i>
+                    <span>好评如潮</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-sd"></i>
+                    <span>闪电发货</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-ry"></i>
+                    <span>权威荣誉</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-desc">
+            <div class="footer-desc-list">
+                <!-- 1 -->
+                <dl>
+                    <dt>新手帮助</dt>
+                    <dd>
+                        <a href="">交易条款协议</a>
+                    </dd>
+                    <dd>
+                        <a href="">注册新用户</a>
+                    </dd>
+                    <dd>
+                        <a href="">找回密码</a>
+                    </dd>
+                    <dd>
+                        <a href="">联系我们</a>
+                    </dd>
+                </dl>
+                <!-- 2 -->
+                <dl>
+
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="">订购流程</a>
+                    </dd>
+                    <dd>
+                        <a href="">验货与签收</a>
+                    </dd>
+                    <dd>
+                        <a href="">订单配送及查询</a>
+                    </dd>
+                </dl>
+                <!-- 3 -->
+                <dl>
+                    <dt>支付及配送</dt>
+                    <dd>
+                        <a href="">支付方式</a>
+                    </dd>
+                    <dd>
+                        <a href="">配送方式</a>
+                    </dd>
+                    <dd>
+                        <a href="">配送时间及运费</a>
+                    </dd>
+                </dl>
+                <!-- 4 -->
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="">最新七天无理由退换货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="">退款说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">发票说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">退款流程</a>
+                    </dd>
+                </dl>
+                <!-- 5 -->
+                <dl class="contact-us">
+                    <dt>宜品客服</dt>
+                    <dd>
+                        <a href="">在线咨询</a>
+                    </dd>
+                    <dd>
+                        <a href="">关于宜品</a>
+                    </dd>
+                    <dd>
+                        <a href="">常见问题</a>
+                    </dd>
+                </dl>
+                <!-- 6 -->
+                <dl class="QR_code">
+                    <div class="QR_code_wx">
+                        <img src="./img/footad-bg.png" alt="" style="width: 78px;height: 78px;margin-top: -123px;margin-left: 208px;">
+                        <p>宜品官方微信</p>
+                    </div>
+                    <div class="QR_code_app">
+                        <img src="./img/app_qr.png" alt="" style="width: 78px;height: 78px;margin-top: -123px;margin-left: 233px;">
+                        <p>宜品手机APP</p>
+                    </div>
+                </dl>
+            </div>
+            <div class="num_email" style="background: #e4e4e4;">
+                <span class="tel_num">
+                服务热线：400-160-2566    9:00-21:00
+            </span> &nbsp;&nbsp;
+                <span class="email">kefu@epin.com</span>
+            </div>
+            <!-- 最后一块 -->
+            <div class="footer-desc-copyright" style="margin-top: 65px;">
+                <p class="footer-ecscinfo">
+                    <a href="" style="color: #686868;">首页</a> |
+                    <a href="" style="color: #686868;">联系我们</a>
+                </p>
+                <b style="color: #686868;">
+                ICP备案证书号:
+                <a href="" style="color: #686868;">豫ICP备16023223号</a>
+               </b>
+                <br style="color: #686868;">
+                <p style="color: #686868;">Copyright ©&nbsp;&nbsp; 2015-2020&nbsp;&nbsp; ，华商创展（中国）有限公司版权所有</p>
+
+                <br> 
+                <!-- <p>
+                共执行 190 个查询，用时 0.689527 秒，在线 945 人，Gzip 已禁用，占用内存 16.525 MB
+                <img src="" alt="">
+               </p> -->
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+document.querySelector("#content > div > div.lazy-ecsc-done.w1200 > div.done-right")

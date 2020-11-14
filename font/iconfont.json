@@ -1,0 +1,16 @@
+{
+  "id": "2197983",
+  "name": "epin",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5649671",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    }
+  ]
+}

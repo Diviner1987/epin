@@ -243,6 +243,7 @@ a:hover {
     flex-wrap: nowrap;
     position: relative;
     left: 0px;
+    /* overflow: hidden; */
 }
 
 .seckill-content .wrapp li {
@@ -256,6 +257,7 @@ a:hover {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    /* overflow: hidden; */
 }
 
 .seckill-content .wrapp li a {
@@ -263,6 +265,20 @@ a:hover {
     list-style: none;
     text-decoration: none;
     color: #666;
+    text-align: center;
+}
+
+.seckill-content .wrapp li a>p {
+    margin-top: 13px;
+    overflow: hidden;
+}
+
+.seckill-content .wrapp li a>span {
+    /* margin-bottom: 10px; */
+    color: #ec5151;
+    font-size: 18px;
+    /* line-height: 10px; */
+    margin-top: 10px;
 }
 
 .seckill-content .wrapp li img {

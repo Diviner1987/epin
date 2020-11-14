@@ -83,14 +83,15 @@
 }
 
 .floor-1 > ul {
-  width: 306px;
+  width: 308px;
   position: absolute;
   top: -7px !important;
   left: 888px;
+  float: left;
 }
 
 .floor-2 > ul {
-  width: 306px;
+  width: 308px;
   position: absolute;
   top: 263px;
   left: 888px;
@@ -198,20 +199,11 @@
   align-items: center;
 }
 
-.floor-items .fi-right > div {
-  width: 740px;
-  height: 490px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  position: absolute;
-  display: none;
+.floor-items .fi-right .p-list > li {
+  float: left;
 }
 
-.floor-items .fi-right > div ul > li {
-  list-style: none;
-}
-
-.floor-items .show {
+.show {
   display: block;
 }
 

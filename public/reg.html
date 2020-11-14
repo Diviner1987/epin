@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页</title>
+    <link rel="stylesheet" href="./styles/sass/reg.css">
+    <link rel="stylesheet" href="./styles/sass/footer.css">
+    <link rel="stylesheet" href="./styles/css/style-d3.css">
+    <!-- <link rel="stylesheet" href="./styles/css/text.css"> -->
+    <link rel="stylesheet" href="./styles/css/base.css">
+</head>
+
+<body>
+    <!-- logo图标 -->
+    <div class="registLogin borderBottom1" style="margin-top: 60px;">
+        <div class="registLogin-header w1200">
+            <a href="./index.php" class="logo"><img src="./img/logo.gif"></a>
+            <!-- <b></b> -->
+            <span class="registLogin-header-fr">有账号<a href="login.html" class="jump">在此登录</a></span>
+        </div>
+    </div>
+    <!-- 注册部分 -->
+    <div class="registLogin-layout w1081">
+        <div class="regist-banner">
+            <a href="">
+                <img src="./img/regist-banner.png" alt="">
+            </a>
+        </div>
+        <div class="regist-wrap" style="margin-top: -620px;">
+            <div class="regist-form" style="overflow:visible;">
+                <div class="mc" style="overflow:visible;margin-left: 66px;">
+                    <div class="form formtwo">
+                        <form action="user.php" method="post" name="formUser" onsubmit="return mobileRegister();">
+                            <div class="item">
+                                <!-- <div class="label">用　户　名</div> -->
+                                <div class="item-info">
+                                    <i class="i-name"></i>
+                                    <input type="text" id="username" name="username" onblur="is_registered(this.value, 1);" maxlength="35" class="text" value="" placeholder="用户名">
+                                </div>
+                                <label id="username_notice_1" class="error"></label>
+                            </div>
+
+                            <div class="item">
+                                <!-- <div class="label">设 置 密 码</div> -->
+                                <div class="item-info">
+                                    <i class="i-pass"></i>
+                                    <input type="password" id="pwd" name="password" maxlength="30" class="text " value="" placeholder="设置密码">
+                                </div>
+                                <label id="phone_password" class="error"></label>
+                            </div>
+
+                            <div class="item">
+                                <!-- <div class="label">确 认 密 码</div> -->
+                                <div class="item-info">
+                                    <i class="i-pass"></i>
+                                    <input type="password" id="pwdRepeat" name="confirm_password" maxlength="30" class="text " value="" placeholder="确认密码">
+                                </div>
+                                <label id="phone_confirm_password" class="error"></label>
+                            </div>
+
+                            <div class="item" id="phone_yz">
+                                <!-- <div class="label">手 机 号 码</div> -->
+                                <div class="item-info">
+                                    <i class="i-phone"></i>
+                                    <input type="text" id="mobile_phone" name="mobile_phone" onblur="checkPhone(this.value);" maxlength="20" class="text" value="" placeholder="手机号码">
+                                </div>
+                                <label id="phone_notice" class="error"></label>
+                                <!-- <span class="tx_rm">或 <a href="javascript:void(0)" class="email_open">邮箱验证</a></span> -->
+                            </div>
+
+                            <div class="item" id="email_yz" style="display:none;">
+                                <!-- <div class="label">邮 箱 验 证</div> -->
+                                <!-- <div class="item-info">
+                                    <i class="i-email"></i>
+                                    <input type="text" id="regName" name="email" onblur="checkEmail(this.value);" class="text" value="" placeholder="邮箱验证">
+                                </div> -->
+                                <!-- <label id="email_notice" class="error"></label> -->
+                                <span class="tx_rm">或 <a href="javascript:void(0)" class="email_off">手机验证</a></span>
+                            </div>
+                            <div class="item">
+                                <!--<div class="label lh37">验　证　码</div>-->
+                                <div class="item-info" style="background:none;">
+                                    <input type="text" id="captcha" name="captcha" maxlength="6" class="text text-1 text-4" value="">
+                                    <img src="./img/captcha_verify.png" alt="captcha" id="authcode_img" style="vertical-align: middle;cursor:pointer;" onclick="this.src='captcha_verify.php?captcha=is_register_phone&amp;'+Math.random()">
+                                </div>
+                                <label id="phone_captcha" class="error"></label>
+                            </div>
+                            <div class="item" id="code_mobile">
+                                <!--<div class="label lh37">手机验证码</div>-->
+                                <div class="item-info phone_code" style="background:none;">
+                                    <input type="text" id="sms" name="mobile_code" maxlength="6" class="text text-1 text-4" value="" placeholder="手机验证码">
+                                    <a href="javascript:void(0);" id="zphone" class="sms-btn">获取验证码</a>
+                                </div>
+                                <label id="code_notice" class="error"></label>
+                            </div>
+                            <div class="item yd_item" style="padding:0">
+                                <!-- <div class="label">&nbsp;</div> -->
+                                <div class="item-info" style="background:none;border:none;height:24px;">
+                                    <input type="checkbox" id="clause2" class="fl agreement" checked="checked" value="1" name="mobileagreement">
+                                    <label for="clause2" class="hole">阅读并同意《<a target="_blank" href="article.php?id=100" class="agreement">服务协议</a>》</label>
+                                </div>
+                                <label id="mobileagreement" class="error"></label>
+                            </div>
+                            <div class="item" style="padding-bottom:10px;">
+                                <!-- <div class="label">&nbsp;</div> -->
+                                <div class="item-info" style="border:none;">
+                                    <input type="hidden" name="flag" id="flag" value="register">
+                                    <input name="register_type" type="hidden" value="1">
+                                    <input type="hidden" name="seccode" id="seccode" value="6732">
+                                    <input name="act" type="hidden" value="act_register">
+                                    <input name="register_mode" type="hidden" value="1">
+                                    <input id="phone_code_callback" type="hidden" value="">
+                                    <input id="phone_captcha_verification" type="hidden" value="">
+                                    <input id="phone_verification" type="hidden" value="0">
+                                    <input id="email_verification" type="hidden" value="0">
+                                    <input id="enabled_captcha" type="hidden" value="1">
+                                    <!--<input name="sms_value" id="sms_value" type="hidden" value="sms_find_signin" />-->
+                                    <input type="submit" id="registsubmit" name="Submit" maxlength="8" class="btn-regist" value="同意协议并注册" style="width:100%;">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="erweima_wrap" style="float:left;padding-bottom:5px;margin-top:18px;"><img src="./img/erweima-reg.png" width="310"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div id="footer">
+        <div class="global-footer-lazy">
+            <div class="ecsc-service-flow">
+                <div class="ecsc-service-item">
+                    <i class="ecsc-zp"></i>
+                    <span>正品保障</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-qt"></i>
+                    <span>七天包退</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-hp"></i>
+                    <span>好评如潮</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-sd"></i>
+                    <span>闪电发货</span>
+                </div>
+                <div class="ecsc-service-item">
+                    <i class="ecsc-ry"></i>
+                    <span>权威荣誉</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-desc">
+            <div class="footer-desc-list">
+                <!-- 1 -->
+                <dl>
+                    <dt>新手帮助</dt>
+                    <dd>
+                        <a href="">交易条款协议</a>
+                    </dd>
+                    <dd>
+                        <a href="">注册新用户</a>
+                    </dd>
+                    <dd>
+                        <a href="">找回密码</a>
+                    </dd>
+                    <dd>
+                        <a href="">联系我们</a>
+                    </dd>
+                </dl>
+                <!-- 2 -->
+                <dl>
+
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="">订购流程</a>
+                    </dd>
+                    <dd>
+                        <a href="">验货与签收</a>
+                    </dd>
+                    <dd>
+                        <a href="">订单配送及查询</a>
+                    </dd>
+                </dl>
+                <!-- 3 -->
+                <dl>
+                    <dt>支付及配送</dt>
+                    <dd>
+                        <a href="">支付方式</a>
+                    </dd>
+                    <dd>
+                        <a href="">配送方式</a>
+                    </dd>
+                    <dd>
+                        <a href="">配送时间及运费</a>
+                    </dd>
+                </dl>
+                <!-- 4 -->
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="">最新七天无理由退换货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="">退款说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">发票说明</a>
+                    </dd>
+                    <dd>
+                        <a href="">退款流程</a>
+                    </dd>
+                </dl>
+                <!-- 5 -->
+                <dl class="contact-us">
+                    <dt>宜品客服</dt>
+                    <dd>
+                        <a href="">在线咨询</a>
+                    </dd>
+                    <dd>
+                        <a href="">关于宜品</a>
+                    </dd>
+                    <dd>
+                        <a href="">常见问题</a>
+                    </dd>
+                </dl>
+                <!-- 6 -->
+                <dl class="QR_code">
+                    <div class="QR_code_wx">
+                        <img src="./img/footad-bg.png" alt="" style="width: 78px;height: 78px;margin-top: -123px;margin-left: 208px;">
+                        <p>宜品官方微信</p>
+                    </div>
+                    <div class="QR_code_app">
+                        <img src="./img/app_qr.png" alt="" style="width: 78px;height: 78px;margin-top: -123px;margin-left: 233px;">
+                        <p>宜品手机APP</p>
+                    </div>
+                </dl>
+            </div>
+            <div class="num_email" style="background: #e4e4e4;">
+                <span class="tel_num">
+                服务热线：400-160-2566    9:00-21:00
+            </span> &nbsp;&nbsp;
+                <span class="email">kefu@epin.com</span>
+            </div>
+            <!-- 最后一块 -->
+            <div class="footer-desc-copyright" style="margin-top: 65px;">
+                <p class="footer-ecscinfo">
+                    <a href="" style="color: #686868;">首页</a> |
+                    <a href="" style="color: #686868;">联系我们</a>
+                </p>
+                <b style="color: #686868;">
+                ICP备案证书号:
+                <a href="" style="color: #686868;text-decoration: none;">豫ICP备16023223号</a>
+                </b>
+
+                <!-- <p>
+                共执行 190 个查询，用时 0.689527 秒，在线 945 人，Gzip 已禁用，占用内存 16.525 MB
+                <img src="" alt="">
+               </p> -->
+            </div>
+            <!-- 信用图标 -->
+            <div style="margin-top: 45px;">
+                <a href="" style="margin-top: 100px;">
+                    <img src="http://c.trustutn.org/images/cert/cert_0_2.png" alt="">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

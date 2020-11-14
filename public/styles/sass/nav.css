@@ -97,14 +97,14 @@
   float: left;
   position: absolute;
   top: 0px;
-  right: 230px;
+  right: 235px;
 }
 
 .site-nav > div:nth-of-type(2) ul:nth-of-type(2) > li:nth-of-type(2) {
   z-index: 10000;
   position: absolute;
   top: 10px;
-  right: 240px;
+  right: 248px;
 }
 
 .site-nav > div:nth-of-type(2) ul:nth-of-type(2) > li:nth-of-type(2) a {

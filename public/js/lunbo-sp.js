@@ -1,4 +1,5 @@
 $(function() {
+    // console.log(1);
     let index = 0
     let timer = null;
     $('.seckill-content').on('mouseover', function() {

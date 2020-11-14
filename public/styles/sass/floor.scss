@@ -92,16 +92,17 @@
 }
 
 .floor-1>ul {
-    width: 306px;
+    width: 308px;
     // background: chocolate;
     position: absolute;
     top: -7px !important;
     left: 888px;
+    float: left;
 }
 
 // 第二层右边的菜单
 .floor-2>ul {
-    width: 306px;
+    width: 308px;
     // background: chocolate;
     position: absolute;
     top: 263px;
@@ -208,22 +209,23 @@
         width: 740px;
         justify-content: space-around;
         align-items: center;
-    }
-    .fi-right>div {
-        width: 740px;
-        height: 490px;
-        border: 1px solid #ccc;
-        padding: 10px;
-        position: absolute;
-        // margin: 10px auto 0;
-        display: none;
-        ul>li {
-            list-style: none;
+        // .show {
+        //     width: 740px;
+        //     height: 490px;
+        //     border: 1px solid #ccc;
+        //     padding: 10px;
+        //     position: absolute;
+        //     // margin: 10px auto 0;
+        //     display: none;
+        // }
+        .p-list>li {
+            float: left;
         }
     }
-    .show {
-        display: block;
-    }
+}
+
+.show {
+    display: block;
 }
 
 //菜单底部

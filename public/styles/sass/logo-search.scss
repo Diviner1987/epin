@@ -71,7 +71,9 @@
 #logo-search>div:nth-of-type(3) {
     justify-content: space-around;
     align-items: center;
-    img {
+    width: 195px;
+    height: 55px;
+    a {
         background: url(../../img/ecsc_icon.png) -404px -2px no-repeat;
     }
 }
