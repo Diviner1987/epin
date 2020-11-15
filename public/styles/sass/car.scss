@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@mixin boxflex($a, $b, $c, $d) {
+    display: $a;
+    flex-direction: $b;
+    justify-content: $c;
+    align-items: $d;
+}
+
+.container {
+    @include boxflex(flex, column, center, center);
+}
+
+#footer {
+    border-top: 1px solid #e0e0e0;
+}
+
+#cart {
+    width: 1200px;
+    // height: 5000px;
+    // background-color: cyan;
+    margin-top: 20px;
+    margin-left: 220px;
+    h2 {
+        width: 100%;
+        height: 40px;
+        background: url(../img/bg_cart.png)no-repeat;
+        border-bottom: 2px solid #05984d;
+        text-indent: 250px;
+        span {
+            color: #444;
+            font-family: Arial, Verdana, "\5b8b\4f53";
+            font-size: 12px;
+            height: 40px;
+            line-height: 40px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        .city-name {
+            color: #444;
+            font-family: Arial, Verdana, "\5b8b\4f53";
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 38px;
+        }
+        .togoshopping {
+            font-family: Arial, Verdana, "\5b8b\4f53";
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 38px;
+            outline: none;
+            cursor: pointer;
+            color: #008842;
+            text-decoration: underline;
+            float: right;
+            margin-right: 22px;
+        }
+    }
+    .my-main {
+        color: #444;
+        word-break: break-all;
+        font-size: 12px;
+        font-family: Arial, Verdana, "\5b8b\4f53";
+        .cart-title {
+            width: 1160px;
+            height: 40px;
+            margin: 10px 20px;
+            background: #eee;
+            @include boxflex(flex, row, flex-start, center);
+            li {
+                height: 40px;
+                font: 12px/40px Simsun;
+                color: #262626;
+                width: 130px;
+                padding: 0 10px;
+                text-align: center;
+            }
+            .cart-check {
+                width: 150px;
+                padding: 0 10px 0 20px;
+                margin: 0 20px 0 0;
+                .chkAll {
+                    float: left;
+                    margin-top: 14px;
+                }
+                i {
+                    margin-left: 20px;
+                }
+            }
+            .cart-t-info {
+                width: 275px;
+                padding: 0 10px;
+                text-align: center;
+            }
+            .cart-t-ub {
+                width: 95px;
+                padding: 0 10px;
+                text-align: center;
+            }
+            .cart-t-price {
+                width: 120px;
+                padding: 0 10px;
+                text-align: center;
+            }
+        }
+        .cart-list {
+            width: 1160px;
+            height: 105px;
+            margin: 10px 20px;
+            background: #ffffff;
+            @include boxflex(flex, row, flex-start, center);
+            li {
+                height: 40px;
+                font: 12px/40px Simsun;
+                color: #262626;
+                width: 130px;
+                padding: 0 10px;
+                text-align: center;
+            }
+            .cart-check {
+                width: 150px;
+                padding: 0 10px 0 20px;
+                margin: 0 20px 0 0;
+                @include boxflex(flex, row, flex-start, center);
+                .chkAll {
+                    font-size: 12px;
+                    font-family: Arial, Verdana, "\5b8b\4f53";
+                    outline: none;
+                }
+                img {
+                    margin-left: 25px;
+                    border: 1px solid #ebebeb;
+                }
+            }
+            .cart-t-info {
+                width: 275px;
+                padding: 0 10px;
+                text-align: center;
+            }
+            .cart-t-ub {
+                width: 95px;
+                padding: 0 10px;
+                text-align: center;
+            }
+            .cart-t-price {
+                width: 120px;
+                padding: 0 10px;
+                text-align: center;
+            }
+        }
+    }
+    .cart-footer {
+        width: 1160px;
+        height: 60px;
+        margin: 10px 20px;
+        padding: 10px;
+        background: #F1F1F1;
+        @include boxflex(flex, row, space-between, center);
+        .f1 {
+            width: 272px;
+            height: 40px;
+            @include boxflex(flex, row, space-between, center);
+            .cart-check {
+                margin-left: 20px;
+            }
+            a {
+                color: #444;
+                text-decoration: none;
+                outline: none;
+                font: 12px/40px Simsun;
+            }
+        }
+        .f2 {
+            // width: 240px;
+            height: 40px;
+            @include boxflex(flex, row, space-between, center);
+        }
+        .cart-btn {
+            width: 94px;
+            height: 38px;
+            word-break: break-all;
+            text-decoration: none;
+            outline: none;
+            font: bold 18px/1em "微软雅黑";
+            background-color: #ff5317;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+.cart-footer .f2 .allin {
+    font-family: Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    font-size: 14px;
+    margin-right: 20px;
+    em {
+        font-family: Arial, Verdana, "\5b8b\4f53";
+        color: #ff5317;
+        font-weight: bold;
+        margin: 0 5px;
+        font-size: 18px;
+        font-style: normal;
+    }
+}
+
+.cart-list .cart-t-num {
+    @include boxflex(flex, row, center, center);
+    .decrement {
+        text-align: center;
+        color: #444;
+        text-decoration: none;
+        outline: none;
+        background: url(../img/bg_cart.png)no-repeat;
+        width: 18px;
+        height: 24px;
+        margin-right: 5px;
+        background-position: 0 -40px;
+    }
+    .increment {
+        text-align: center;
+        color: #444;
+        text-decoration: none;
+        outline: none;
+        background: url(../img/bg_cart.png)no-repeat;
+        width: 18px;
+        height: 24px;
+        margin-left: 5px;
+        background-position: -20px -40px;
+    }
+    .itext {
+        border: 1px solid #cacbcb;
+        width: 42px;
+        height: 24px;
+        padding: 1px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
+        font-family: verdana;
+        color: #333;
+    }
+}
+
+#cart h2 .city-name:hover {
+    background-color: #008842;
+    color: #fff;
+}

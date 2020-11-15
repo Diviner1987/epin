@@ -13039,8 +13039,9 @@ a.btn-stages:hover {
 }
 
 .cart-tbody .item-item .p-price {
-    padding-left: 277px;
+    margin-left: 582px;
     width: 120px;
+    margin-top: -46px;
 }
 
 .cart-tbody .item-item .p-price strong {
@@ -13245,7 +13246,8 @@ a.btn-stages:hover {
 
 .cart-tbody .item-item .p-sum {
     width: 100px;
-    padding-left: 140px;
+    margin-left: 880px;
+    margin-top: -46px;
 }
 
 .cart-tbody .item-item .p-sum strong {
@@ -13255,7 +13257,8 @@ a.btn-stages:hover {
 
 .cart-tbody .item-item .p-ops {
     width: 161px;
-    padding-left: 127px;
+    margin-left: 1005px;
+    margin-top: -46px;
 }
 
 .cart-tbody .item-item .p-ops a {

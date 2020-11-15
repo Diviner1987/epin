@@ -4,7 +4,7 @@
         $(window).on('scroll', (function() {
             let scrollTop = $(document).scrollTop();
             let top = 1400;
-            console.log(scrollTop);
+            // console.log(scrollTop);
             if (scrollTop > top) {
                 $(".elevator").css({
                     opacity: '1'
@@ -18,7 +18,7 @@
                 $(".show").css({
                     top: '0'
                 })
-            } else if(scrollTop < 200){
+            } else if (scrollTop < 200) {
                 $(".show").css({
                     top: -60
                 })

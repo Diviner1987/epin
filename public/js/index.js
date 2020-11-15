@@ -1,5 +1,5 @@
 import './library/jquery.js';
-// import './library/jquery.lazyload.js';
+import './library/jquery.lazyload.js';
 import { baseUrl } from './library/config.js';
 import './library/idangerous.swiper.min.js';
 import './lunbo-sp.js'; //轮播JS
@@ -23,17 +23,24 @@ $.ajax({
             console.log(picture);
             console.log(picture[0].src);
             tempLi += `
-                <li>                            
-                    <a href="../html/detail.html?id=${elm.id}">
-                    <img src="../imgs/${picture[0].src}" alt="" >
-                    <p>${elm.title}</p>
-                    <span>¥${elm.price}</span>
+                <li style="display:flex; flex-direction: column;
+                justify-content: space-around;
+                align-items: center;">  
+                    <img src="../img/${picture[0].src}" style="width: 150px;
+                    height: 150px;
+                    margin-left: -5px;">                      
+                    <a href="../detail.html?id=${elm.id}">
+                    <p style="text-align: center;">${elm.title}</p>
+                    <p style="text-align: center;">¥${elm.price}</p>
                     </a>
+                    
                 </li>
                 `;
         });
-        //移入之后出现透明度的效果
         $('.p-list').append(tempLi);
+
+
+        //移入之后出现透明度的效果
         console.log($('.new-left'));
         $('.new-left').on('mouseover', function() {
             $(this).addClass('hoveropc');

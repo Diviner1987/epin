@@ -209,17 +209,11 @@
         width: 740px;
         justify-content: space-around;
         align-items: center;
-        // .show {
-        //     width: 740px;
-        //     height: 490px;
-        //     border: 1px solid #ccc;
-        //     padding: 10px;
-        //     position: absolute;
-        //     // margin: 10px auto 0;
-        //     display: none;
-        // }
         .p-list>li {
             float: left;
+            a {
+                text-align: center;
+            }
         }
     }
 }

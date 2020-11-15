@@ -203,6 +203,10 @@
   float: left;
 }
 
+.floor-items .fi-right .p-list > li a {
+  text-align: center;
+}
+
 .show {
   display: block;
 }

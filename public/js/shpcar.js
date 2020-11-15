@@ -35,10 +35,11 @@ import { baseUrl } from './library/config.js';
                     let picture = JSON.parse(elm.picture);
 
                     template += `
-                                        <div class="cell p-goods">
+                                        <li class="cell p-goods" style="width:100%; list-style:none">
+
                                                 <div class="goods-item">
                                                     <div class="p-img">
-                                                        <a href="javascript:;"><img src="../${picture[0].src}" width="80" height="80"></a>
+                                                        <a href="javascript:;"><img src="../img/${picture[0].src}" width="80" height="80"></a>
                                                     </div>
                                                     <div class="item-msg">
                                                         <div class="p-name">
@@ -62,7 +63,13 @@ import { baseUrl } from './library/config.js';
                                             <div class="cell p-ops">
                                                 <a id="remove_642989" class="cart-remove" href="javascript:void(0);" data-dialog="dialog" data-divid="cart_remove" data-removeurl="flow.php?step=drop_goods&amp;id=642989" data-collecturl="flow.php?step=drop_to_collect&amp;id=642989" data-recid="642989"
                                                 data-title="删除">删除</a>
-                                        </div>`;
+                                            </div>
+                                        </li> 
+                                        <div>
+                                        ${elm.details}
+                                        </div>
+                                            `;
+
                 });
 
 
