@@ -17,7 +17,7 @@ import sTab from './smallpic.js'; //小图切换
         success: function(res) {
             res = res[0];
             let picture = JSON.parse(res.picture);
-
+            console.log(picture);
             //详情页的渲染拼接部分
             let template = `
            

@@ -1,10 +1,10 @@
 import './library/jquery.js';
-import './library/jquery.lazyload.js';
+// import './library/jquery.lazyload.js';
 import { baseUrl } from './library/config.js';
 import './library/idangerous.swiper.min.js';
 import './lunbo-sp.js'; //轮播JS
 // import './dataopc.js'; //透明度改变js
-// import './left-nav.js';
+import './left-nav.js';
 
 
 //首页有关数据的渲染-----其他模块写的功能也就是单个的js 写完
@@ -20,12 +20,12 @@ $.ajax({
         res.forEach((elm, i) => {
 
             let picture = JSON.parse(elm.picture); //收到数据转换成JSON对象
-            // console.log(picture);
-            // console.log(picture[0].src);
+            console.log(picture);
+            console.log(picture[0].src);
             tempLi += `
                 <li>                            
                     <a href="../html/detail.html?id=${elm.id}">
-                    <img data-original="../img/${picture[0].src}" alt="" class="lazy">
+                    <img src="../imgs/${picture[0].src}" alt="" >
                     <p>${elm.title}</p>
                     <span>¥${elm.price}</span>
                     </a>
@@ -43,19 +43,21 @@ $.ajax({
         })
 
         //首页悬浮的导航栏
-        $(window).on('scroll', (function() {
-            let scrollTop = $(document).scrollTop();
-            let top = $(".show").offset().top;
-            if (scrollTop > top) {
-                $(".show").css({
-                    top: '0'
-                })
-            } else {
-                $(".show").css({
-                    top: '-60'
-                })
-            }
-        }));
+        // $(window).on('scroll', (function() {
+        //     let scrollTop = $(document).scrollTop();
+        //     console.log(111);
+        //     console.log(scrollTop);
+        //     let top = $(".show").offset().top;
+        //     if (scrollTop > top) {
+        //         $(".show").css({
+        //             top: '0'
+        //         })
+        //     } else {
+        //         $(".show").css({
+        //             top: '-60'
+        //         })
+        //     }
+        // }));
         //右边的导航栏二维码图片
         $('.quick_toggle').on('mouseover', (function() {
             console.log(333333); //事件触发了，但是为什么不在执行效果
