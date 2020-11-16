@@ -28,7 +28,7 @@ $.ajax({
                 align-items: center;">  
                     <img src="../img/${picture[0].src}" style="width: 150px;
                     height: 150px;
-                    margin-left: -5px;">                      
+                    margin-left: -5px;" >                      
                     <a href="../detail.html?id=${elm.id}">
                     <p style="text-align: center;">${elm.title}</p>
                     <p style="text-align: center;">¥${elm.price}</p>
