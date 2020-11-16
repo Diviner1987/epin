@@ -66,7 +66,7 @@ import { baseUrl } from './library/config.js';
                                             </div>
                                         </li> 
                                         <div>
-                                        ${elm.details}
+                                       
                                         </div>
                                             `;
 

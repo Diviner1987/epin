@@ -26,11 +26,11 @@ import cookie from './library/cookie.js';
             
             <div class="smallbox">
                 <div class="small" style="position: relative;width: 400px;height:400px;border:1px solid #ccc;">
-                    <img src="./img/1-1.jpg" alt="" style="width: 100%;height: 100%;">
+                    <img src="../img/${picture[1].src}" alt="" style="width: 100%;height: 100%;">
                     <div class="movebox hide" style="width: 200px;height: 200px;background-color: orange;opacity: .2;position: absolute;top: 0;left: 0;"></div>
                 </div>
                 <div class="big hide" style="width: 500px;height: 500px;overflow: hidden;position: fixed;top:243px;left:641px;z-index: 10;">
-                    <img src="./img/1-1.jpg" alt="" class="bigpic" style="position: absolute;top: 0;left: 0;width: 700px;height: 700px;">
+                    <img src="../img/${picture[1].src}" alt="" class="bigpic" style="position: absolute;top: 0;left: 0;width: 700px;height: 700px;">
                 </div>
             </div>
 
@@ -39,19 +39,19 @@ import cookie from './library/cookie.js';
                 <a class="bx-next" style=" cursor: pointer;">&gt;</a>
                 <ul class="list">
                     <li>
-                        <img src="./img/1-1.jpg" alt="">
+                        <img src="../img/${picture[1].src}" alt="">
                     </li>
                     <li>
-                        <img src="./img/1-2.jpg" alt="">
+                        <img src="../img/${picture[2].src}" alt="">
                     </li>
                     <li>
-                        <img src="./img/1-3.jpg" alt="">
+                        <img src="../img/${picture[3].src}" alt="">
                     </li>
                     <li>
-                        <img src="./img/1-4.jpg" alt="">
+                        <img src="../img/${picture[4].src}" alt="">
                     </li>
                     <li>
-                        <img src="./img/1-5.jpg" alt="">
+                        <img src="../img/${picture[4].src}" alt="">
                     </li>
                 </ul>
             </div>
