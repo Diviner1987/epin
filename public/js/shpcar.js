@@ -35,8 +35,13 @@ import { baseUrl } from './library/config.js';
                     let picture = JSON.parse(elm.picture);
 
                     template += `
+                                        
                                         <li class="cell p-goods" style="width:100%; list-style:none">
-
+                                                <input type="checkbox" checked style="width: 15px;
+                                                    height: 15px;
+                                                    position: absolute;
+                                                    top: 47px;
+                                                    left: 25px;">
                                                 <div class="goods-item">
                                                     <div class="p-img">
                                                         <a href="javascript:;"><img src="../img/${picture[0].src}" width="80" height="80"></a>
@@ -53,7 +58,7 @@ import { baseUrl } from './library/config.js';
                                                        margin-right: -4px;
                                                        background: #fff;
                                                    }">+</a>
-                                                       <input type="text" class="text buy-num" id="quantity" onblur="changePrice()" value="1" name="number" defaultnumber="1" style="width:20px;" ${arr[0].num}>
+                                                       <input type="text" class="text buy-num" id="quantity" onblur="changePrice()" value="1" name="number" defaultnumber="1" style="width:20px;" ${elm.num}>
                                                        <a href="javascript:;"class="btn-add" style="border: 1px solid;
                                                        padding: 3px;
                                                        margin-left: -4px; background: #fff;">-</a>
@@ -69,17 +74,35 @@ import { baseUrl } from './library/config.js';
                                             <div class="cell p-sum">
                                                 <strong id="goods_subtotal_642989">
                                                         <div
-                                                        id="_642989_subtotal">¥${(elm.price*arr[0].num).toFixed(2)}</div>
+                                                        id="_642989_subtotal">¥${elm.price}</div>
                                                 </strong>
                                             </div>
+                                           
                                             <div class="cell p-ops">
                                                 <a id="remove_642989" class="cart-remove" href="javascript:void(0);" data-dialog="dialog" data-divid="cart_remove" data-removeurl="flow.php?step=drop_goods&amp;id=642989" data-collecturl="flow.php?step=drop_to_collect&amp;id=642989" data-recid="642989"
-                                                data-title="删除">删除</a>
+                                                data-title="删除">
+                                                删除
+                                                </a>
+                                            </div>
+
+                                            <!-- 总价--可以完成数据的传送 -->
+                                            <div class="price-sum" id="total_desc">
+                                                <span class="txt">总价(不含运费)：</span>
+                                                <span class="price sumPrice"><em id="cart_goods_amount">¥${(elm.price*arr[0].num).toFixed(2)}</em></span>
                                             </div>
                                         </li> 
+
+                                       
+                                        
+                                            
+                                       
+                                    </div>
+                                       
                                         <div>
                                        
                                         </div>
+
+
                                             `;
 
                 });

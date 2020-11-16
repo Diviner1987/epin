@@ -27,13 +27,13 @@ $(function() {
             })
         }
         $('.wrapp').stop(true).animate({
-            'left': parseInt($('.wrapp>li').css('width')) * -index
-        }, 300)
-        console.log(index);
+                'left': parseInt($('.wrapp>li').css('width')) * -index
+            }, 300)
+            // console.log(index);
     })
     $('.bx-next').on('click', function() {
         index += 1;
-        console.log($('.wrapp li').length);
+        // console.log($('.wrapp li').length);
         if ($('.wrapp li').length == index) {
             $('.wrapp').css({
                 'left': 0,
@@ -45,6 +45,6 @@ $(function() {
                 'left': parseInt($('.wrapp>li').css('width')) * -index
             }, 300)
         }
-        console.log(index);
+        // console.log(index);
     })
 });
