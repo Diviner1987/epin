@@ -116,6 +116,7 @@ import cookie from './library/cookie.js';
                 addItem(res.id, $('#quantity').val());
             });;
 
+            // 放大镜
             $(function() {
                 let movebox = $('.movebox'),
                     bigpic = $('.bigpic'),
@@ -142,12 +143,12 @@ import cookie from './library/cookie.js';
 
                         let top = ev.pageY - small.offset().top - movebox.offset().top / 2;
                         let left = ev.pageX - small.offset().left - movebox.offset().left / 2;
-                        console.log(ev.pageY - small.offset().top - movebox.offset().top);
-                        console.log(left);
+                        // console.log(ev.pageY - small.offset().top - movebox.offset().top);
+                        // console.log(left);
 
                         // 4. 比例计算
                         let ratio = bigpic.offset().left / small.offset().left; // 比例需要大于1
-                        console.log(ratio);
+                        // console.log(ratio);
                         // 管理边界
                         if (top <= 0) {
                             top = 0;

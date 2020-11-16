@@ -53,7 +53,7 @@ import { baseUrl } from './library/config.js';
                                                        margin-right: -4px;
                                                        background: #fff;
                                                    }">+</a>
-                                                       <input type="text" class="text buy-num" id="quantity" onblur="changePrice()" value="1" name="number" defaultnumber="1" style="width:20px;" >
+                                                       <input type="text" class="text buy-num" id="quantity" onblur="changePrice()" value="1" name="number" defaultnumber="1" style="width:20px;" ${arr[0].num}>
                                                        <a href="javascript:;"class="btn-add" style="border: 1px solid;
                                                        padding: 3px;
                                                        margin-left: -4px; background: #fff;">-</a>

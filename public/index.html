@@ -20,8 +20,9 @@
     <link rel="stylesheet" href="./styles/css/show-erwei.css">
 </head>
 <style>
-    
+
 </style>
+
 <body>
     <!-- 定版心设置网页的宽度 -->
     <div id="nav-container" style="background: #efefef;">
@@ -471,7 +472,7 @@
     <div class="floor-result">
             <div>
              <!-- 第一层 -->
-             <div class="floor-container">
+            <div class="floor-container" id="floor-1">
                 <div class="floor-title" style="margin-top: 60px;">
                     <h2><i class="floor-icon">1F</i><span rev="34">白酒、红酒、高端藏酒</span></h2>
                     <ul class="tab">
@@ -586,50 +587,6 @@
                             <!-- 切换的第一块 -->
                             <div class="ecsc-main">
                                 <ul class="p-list" style="width: 740px;">
-                                    <!-- <li style="opacity: 1;">
-                                        <div class="p-img style-img">
-                                            <div class=""></div>
-                                            <a href="goods.php?id=10685" target="_blank"><img src="http://images.epin.com/images/201612/thumb_img/0_thumb_G_1483127413279.jpg" width="140" height="140"></a>
-                                        </div>
-                                        <div class="p-name"><a href="goods.php?id=10685" title="">热卖 杜康老窖柔醇50度白酒500ml*6瓶 整箱</a></div>
-                                        <div class="p-price">
-                                            <span class="shop-price">¥1128.00</span>
-                                            <span class="original-price">¥1353.60</span>
-                                        </div>
-                                    </li>
-                                    <li style="opacity: 1;">
-                                        <div class="p-img style-img">
-                                            <div class=""></div>
-                                            <a href="goods.php?id=10681" target="_blank"><img src="http://images.epin.com/images/201802/thumb_img/10681_thumb_G_1519438309840.jpg" width="140" height="140"></a>
-                                        </div>
-                                        <div class="p-name"><a href="goods.php?id=10681" title="">杜康百年老号V9浓香型白酒 50%Vol 500ml*6瓶【支持仓库自提】</a></div>
-                                        <div class="p-price">
-                                            <span class="shop-price">¥868.00</span>
-                                            <span class="original-price">¥1041.60</span>
-                                        </div>
-                                    </li>
-                                    <li style="opacity: 1;">
-                                        <div class="p-img style-img">
-                                            <div class=""></div>
-                                            <a href="goods.php?id=10663" target="_blank"><img src="http://images.epin.com/images/201802/thumb_img/10663_thumb_G_1519438689518.jpg" width="140" height="140"></a>
-                                        </div>
-                                        <div class="p-name"><a href="goods.php?id=10663" title="">整箱 郎酒朗哥（红款郎妹）酱香型白酒 44.8%Vol 500ml*6瓶【支持仓库自提】</a></div>
-                                        <div class="p-price">
-                                            <span class="shop-price">¥1268.00                                                             </span>
-                                            <span class="original-price">¥1521.60</span>
-                                        </div>
-                                    </li>
-                                    <li style="opacity: 1;">
-                                        <div class="p-img style-img">
-                                            <div class=""></div>
-                                            <a href="goods.php?id=10656" target="_blank"><img src="http://images.epin.com/images/201802/thumb_img/10656_thumb_G_1519437882600.jpg" width="140" height="140"></a>
-                                        </div>
-                                        <div class="p-name"><a href="goods.php?id=10656" title="">整箱 赖府封坛三十年陈酿酒奢藏级六斤坛 53%Vol  3000ml*2坛【支持仓库自提】</a></div>
-                                        <div class="p-price">
-                                            <span class="shop-price">¥7360.00</span>
-                                            <span class="original-price">¥8832.00</span>
-                                        </div>
-                                    </li> -->
                                 </ul>
                             </div>
                            
@@ -668,14 +625,16 @@
                     </ul>
                 </div>
             </div>
+
             <!-- 第二层上面的标使图 -->
             <div class="raise-img" style="margin-top: -345px;left: 0;">
                 <a href="javascript:;">
                     <img src="./img/1566259028644702629.jpg" alt="">
                 </a>
             </div>
+
             <!-- 第二层 -->
-            <div class="floor-container" style="margin-top: 200px;">
+            <div class="floor-container" style="margin-top: 200px;" id="floor-2">
                 <div class="floor-title" >
                     <h2><i class="floor-icon">2F</i><span rev="16">电器、数码、医疗器械</span></h2>
                     <ul class="tab">
@@ -998,8 +957,9 @@
                     <img src="./img/1566259060984702861.jpg" alt="">
                 </a>
             </div>
+
             <!-- 第三层 -->
-            <div class="floor-container">
+            <div class="floor-container" id="floor-3">
                 <div class="floor-title" style="margin-top: 200px;">
                     <h2><i class="floor-icon">3F</i><span rev="578">男/女装、男/女鞋、帽子</span></h2>
                     <ul class="tab">
@@ -1167,6 +1127,8 @@
             </div>
         </div>
     </div>
+
+    
     <!-- 底部 -->
     <div id="footer">
     <div class="global-footer-lazy">
@@ -1339,10 +1301,10 @@
 
     <!-- 左边的导航栏 -->
     <div id="elevator" class="elevator" style="position: fixed; top: 300px; left: 133.5px; opacity: 0;">
-        <ul>
-            <li class="handler_floor1"><i class="icon"></i></li>
-            <li class="handler_floor2"><i class="icon"></i></li>
-            <li class="handler_floor3"><i class="icon"></i></li>
+        <ul id="list">
+            <li class="handler_floor1" title="floor-1"><i class="icon"></i></li>
+            <li class="handler_floor2" title="floor-2"><i class="icon"></i></li>
+            <li class="handler_floor3" title="floor-3"><i class="icon"></i></li>
             <li class="handler_floor4 curr"><i class="icon"></i></li>
             <li class="handler_floor5"><i class="icon"></i></li>
             <li class="handler_floor6"><i class="icon"></i></li>

@@ -20,8 +20,8 @@ $.ajax({
         res.forEach((elm, i) => {
 
             let picture = JSON.parse(elm.picture); //收到数据转换成JSON对象
-            console.log(picture);
-            console.log(picture[0].src);
+            // console.log(picture);
+            // console.log(picture[0].src);
             tempLi += `
                 <li style="display:flex; flex-direction: column;
                 justify-content: space-around;
@@ -41,7 +41,7 @@ $.ajax({
 
 
         //移入之后出现透明度的效果
-        console.log($('.new-left'));
+        // console.log($('.new-left'));
         $('.new-left').on('mouseover', function() {
             $(this).addClass('hoveropc');
         })
@@ -49,22 +49,7 @@ $.ajax({
             $(this).removeClass('hoveropc');
         })
 
-        //首页悬浮的导航栏
-        // $(window).on('scroll', (function() {
-        //     let scrollTop = $(document).scrollTop();
-        //     console.log(111);
-        //     console.log(scrollTop);
-        //     let top = $(".show").offset().top;
-        //     if (scrollTop > top) {
-        //         $(".show").css({
-        //             top: '0'
-        //         })
-        //     } else {
-        //         $(".show").css({
-        //             top: '-60'
-        //         })
-        //     }
-        // }));
+
         //右边的导航栏二维码图片
         $('.quick_toggle').on('mouseover', (function() {
             console.log(333333); //事件触发了，但是为什么不在执行效果
@@ -77,18 +62,34 @@ $.ajax({
 
         }));
 
+
+        //楼层效果
+        $(function() {
+            //点击左边楼层的li跳转楼层
+            $('#list>li>i').on('click', function() {
+                // console.log(1);
+                // 获得 被点击的a元素对应的div元素距离页面顶部的高度
+                let top = $(`#${$(this).attr('title')}`).offset().top;
+                $('html').animate({
+                    scrollTop: top
+                }, 600);
+            });
+            //滚动右边的滚轴对应的左边的li
+            $(window).on('scroll', function() {
+                // console.log(1);
+                // 当前文档距离顶部的高度
+                let top = $(document).scrollTop();
+                // console.log(top);
+
+                let index = Math.round(top / 600);
+                $('#list>li>i').removeClass('active').eq(index).addClass('active');
+            });
+        });
     }
 });
 
-// 
 
-//tab切换
-// $('.tabs-div').tabs();
-//左边的导航栏事件
-// $('#elevator').on('')
+
 
 //
 $(".lazy").lazyload({ effect: "fadeIn" });
-
-
-// $('.slider ol li', 'click')/
