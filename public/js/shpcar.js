@@ -46,6 +46,18 @@ import { baseUrl } from './library/config.js';
                                                             <a href="goods.php?id=34683" target="_blank">${elm.title}</a>
                                                         </div>
                                                     </div>
+                                                    <div class="done-addnum">
+                                                       <span style="margin-left: 730px;"></span> 
+                                                       <a href="javascript:;" class="btn-reduce" style="border: 1px solid;
+                                                       padding: 3px;
+                                                       margin-right: -4px;
+                                                       background: #fff;
+                                                   }">+</a>
+                                                       <input type="text" class="text buy-num" id="quantity" onblur="changePrice()" value="1" name="number" defaultnumber="1" style="width:20px;" >
+                                                       <a href="javascript:;"class="btn-add" style="border: 1px solid;
+                                                       padding: 3px;
+                                                       margin-left: -4px; background: #fff;">-</a>
+                                                    </div>
                                                 </div>
                                             </div>
 

@@ -13427,6 +13427,7 @@ a.btn-stages:hover {
     height: 16px;
     overflow: hidden;
     background: url(../../img/ecsc_icon.png) -429px -191px no-repeat;
+    background: #fff;
 }
 
 .sku-props-selector .prop dd .item a {
