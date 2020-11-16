@@ -75,4 +75,4 @@ function tabswitch() {
         opacity: 100
     });
 }
-// export default { lunbotz };
+export default { lunbotz };

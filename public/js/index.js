@@ -4,6 +4,7 @@ import { baseUrl } from './library/config.js';
 import './library/idangerous.swiper.min.js';
 import './lunbo-sp.js'; //轮播JS
 // import './dataopc.js'; //透明度改变js
+// import { lunbotz } from './lunbo-tz.js';
 import './left-nav.js';
 
 
@@ -85,6 +86,9 @@ $.ajax({
                 $('#list>li>i').removeClass('active').eq(index).addClass('active');
             });
         });
+
+
+
     }
 });
 
