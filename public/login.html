@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录页</title>
-    <link rel="stylesheet" href="./styles/sass/login.scss">
+    <link rel="stylesheet" href="./styles/sass/login.css">
     <link rel="stylesheet" href="./styles/css/base.css">
     <link rel="stylesheet" href="./styles/css/style-d3.css">
     <link rel="stylesheet" href="./styles/sass/index.css">
+    <script src="js/login.js" type="module"></script>
 </head>
 
 <body>
@@ -38,7 +39,7 @@
                 <a href="javascript:void(0);" class="icon buy-next" style="display: none;"></a>
                 <div class="login-wrap">
                     <div class="login-form">
-                        <form name="formLogin" action="user.php" method="post" onsubmit="userLogin();return false;">
+                        <div name="formLogin" action="user.php" method="post" onsubmit="userLogin();return false;">
                             <div class="mt">
                                 <h1>欢迎登录</h1>
                                 <a href="reg.html" class="jump">免费注册</a>
@@ -76,7 +77,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="qrcode-login">
                         <div class="mc">

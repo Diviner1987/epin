@@ -16,7 +16,7 @@ const productRouter = require('./router/product');
 //4.配置服务
 let conf = {
     port: 8888,
-    host: 'localhost'
+    host: '10.31.162.68'
 };
 //6.配置静态服务
 app.use(express.static(path.join(__dirname, 'public')));

@@ -33,12 +33,12 @@
             <div class="regist-form" style="overflow:visible;">
                 <div class="mc" style="overflow:visible;margin-left: 66px;">
                     <div class="form formtwo">
-                        <form action="user.php" method="post" name="formUser" onsubmit="return mobileRegister();">
+                        <div action="user.php" method="post" name="formUser" onsubmit="return mobileRegister();">
                             <div class="item">
                                 <!-- <div class="label">用　户　名</div> -->
                                 <div class="item-info">
                                     <i class="i-name"></i>
-                                    <input type="text" id="username" name="username" onblur="is_registered(this.value, 1);" maxlength="35" class="text" value="" placeholder="用户名">
+                                    <input type="text" id="username" name="username" onblur="(this.value, 1);" maxlength="35" class="text" value="" placeholder="用户名">
                                 </div>
                                 <label id="username_notice_1" class="error"></label>
                             </div>
@@ -65,7 +65,7 @@
                                 <!-- <div class="label">手 机 号 码</div> -->
                                 <div class="item-info">
                                     <i class="i-phone"></i>
-                                    <input type="text" id="mobile_phone" name="mobile_phone" onblur="checkPhone(this.value);" maxlength="20" class="text" value="" placeholder="手机号码">
+                                    <input type="text" id="mobile_phone" name="mobile_phone" onblur="(this.value);" maxlength="20" class="text" value="" placeholder="手机号码">
                                 </div>
                                 <label id="phone_notice" class="error"></label>
                             </div>
@@ -114,7 +114,7 @@
                                     <input type="submit" id="registsubmit" name="Submit" maxlength="8" class="btn-regist" value="同意协议并注册" style="width:100%;">
                                 </div>
                             </div>
-                        </form>
+                        </div>
                         <div class="erweima_wrap" style="float:left;padding-bottom:5px;margin-top:18px;"><img src="./img/erweima-reg.png" width="310"></div>
                     </div>
                 </div>

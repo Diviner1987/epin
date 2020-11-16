@@ -1,9 +1,8 @@
 import "./library/jquery.js";
 import { baseUrl } from './library/config.js';
 import cookie from './library/cookie.js';
-// import glass from './glass.js'; //放大镜
-// import sTab from './smallpic.js'; //小图切换
-//详情页商品的数据渲染
+
+//详情页商品的数据渲染``
 (function() {
     let id = location.search.split('=')[1]; // 第一步获得商品id---是渲染的某块数据点击的时候传递给详情页的id
 
