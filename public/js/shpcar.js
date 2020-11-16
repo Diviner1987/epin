@@ -46,39 +46,31 @@ import { baseUrl } from './library/config.js';
                                                     <div class="p-img">
                                                         <a href="javascript:;"><img src="../img/${picture[0].src}" width="80" height="80"></a>
                                                     </div>
+
                                                     <div class="item-msg">
-                                                        <div class="p-name">
+                                                        <div class="p-name" style="margin-top: 36px;">
                                                             <a href="goods.php?id=34683" target="_blank">${elm.title}</a>
                                                         </div>
                                                     </div>
-                                                    <div class="done-addnum">
-                                                       <span style="margin-left: 730px;"></span> 
-                                                       <a href="javascript:;" class="btn-reduce" style="border: 1px solid;
-                                                       padding: 3px;
-                                                       margin-right: -4px;
-                                                       background: #fff;
-                                                   }">+</a>
-                                                       <input type="text" class="text buy-num" id="quantity" onblur="changePrice()" value="1" name="number" defaultnumber="1" style="width:20px;" ${elm.num}>
-                                                       <a href="javascript:;"class="btn-add" style="border: 1px solid;
-                                                       padding: 3px;
-                                                       margin-left: -4px; background: #fff;">-</a>
-                                                    </div>
+
+                                                    
                                                 </div>
+                                               
                                             </div>
 
-                                            <div class="cell p-price">
+                                            <div class="cell p-price" style="margin-top:-80px;">
                                                 <strong id="goods_price_642989">¥${(elm.price).toFixed(2)}</strong>
                                             </div>
 
                                             <!-- 总价 -->
-                                            <div class="cell p-sum">
+                                            <div class="cell p-sum" style="margin-top:-80px;">
                                                 <strong id="goods_subtotal_642989">
                                                         <div
                                                         id="_642989_subtotal">¥${elm.price}</div>
                                                 </strong>
                                             </div>
                                            
-                                            <div class="cell p-ops">
+                                            <div class="cell p-ops" style="margin-top:-80px;">
                                                 <a id="remove_642989" class="cart-remove" href="javascript:void(0);" data-dialog="dialog" data-divid="cart_remove" data-removeurl="flow.php?step=drop_goods&amp;id=642989" data-collecturl="flow.php?step=drop_to_collect&amp;id=642989" data-recid="642989"
                                                 data-title="删除">
                                                 删除

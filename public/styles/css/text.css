@@ -12803,7 +12803,7 @@ a.btn-stages:hover {
     position: relative;
     padding: 0 10px 1px 51px;
     line-height: 22px;
-    *min-height: 106px;
+    /* *min-height: 106px; */
 }
 
 .cart-tbody .item-item .item-form {
